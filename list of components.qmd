@@ -1,0 +1,5 @@
+---
+title: "list of components"
+---
+
+here follows a list of all the required electronic components:

@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "FylloClip tutorial"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - text: "Introduction"
+        href: introduction.qmd
+      - section: "hardware components"
+        contents:
+          - PCBs.qmd
+          - list of components.qmd
+      - section: "r coding"
+        contents:
+          - pipe.qmd
+          - clean_data.qmd
+          - layout-knitr.qmd
+          - layout-jupyter.qmd
+      - section: advanced.qmd
+        contents:
+          - raw-code.qmd
+          - custom-theme.qmd
+      - acknowlegment.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
