@@ -27,7 +27,7 @@ website:
           - registration on TTS (The Things Stack).qmd
       - section: "assembly"
         contents:
-          - soldering instructions.qmd
+          - instructions for soldering.qmd
           - programming.qmd
       - acknowlegment.qmd
 

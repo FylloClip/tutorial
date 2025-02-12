@@ -78,5 +78,17 @@
       "assembly",
       "soldering instructions"
     ]
+  },
+  {
+    "objectID": "instructions for soldering.html",
+    "href": "instructions for soldering.html",
+    "title": "instructions for soldering",
+    "section": "",
+    "text": "Download link for a Video showing how to solder the LoRa module onto the main PCB:\nsolder RFM95",
+    "crumbs": [
+      "Home",
+      "assembly",
+      "instructions for soldering"
+    ]
   }
 ]
