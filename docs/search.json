@@ -47,5 +47,17 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Arduino code.html",
+    "href": "Arduino code.html",
+    "title": "Arduino code",
+    "section": "",
+    "text": "in this part the code for the electronic control unit will be explained",
+    "crumbs": [
+      "Home",
+      "software",
+      "Arduino code"
+    ]
   }
 ]
