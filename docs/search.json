@@ -11,7 +11,7 @@
     "href": "introduction.html",
     "title": "Introduction",
     "section": "",
-    "text": "This tutorial is intended to provide all the necessary information for building a fully functional FylloClip module capable of transmitting data remotely via the LoRaWAN network. It will guide you from ordering PCBs (printed circuit boards), buying electronic components, assembly of the system, programming and setting up the remote data transmission.",
+    "text": "This tutorial is intended to provide all the necessary information for building a fully functional FylloClip module capable of transmitting data remotely via the LoRaWAN network. It will guide you from ordering PCBs (printed circuit boards), buying electronic components, assembly of the system and programming to setting up the remote data transmission.",
     "crumbs": [
       "Home",
       "Introduction"
