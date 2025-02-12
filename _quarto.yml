@@ -34,6 +34,11 @@ website:
 format:
   html:
     theme: flatly
+  #  mainfont: arial
+  #  fontsize: 1.5rem
+  #  fontcolor: "#0013d5"
+    linkcolor: "blue"
+  #  monofont: courier new
     css: styles.css
     toc: true
 
