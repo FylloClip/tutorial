@@ -37,7 +37,7 @@
     "text": "Here you can download the production files for the PCB needed to create the control unit (Arduino board) as well as the PCBs used as foliar sensors.\nThe files are provided in two different formats, gerber and EasyEDA. The gerber files can be used directly to place an order with a PCB manufacturer, whereas the EasyEDA files can be uploaded to the EasyEDA PCB design software where they can be edited and modified before placing an order.\n\nArduino board\n\n\n\nArduino board PCB\n\n\nGerber format\nEasyEDA format\n\n\nFylloClip sensors\nWhen ordering the foliar sensors, please make sure to select a PCB thickness of 1 mm. If the thickness is more than 1 mm, the sensor will be too stiff an difficult to be placed on a leaf. I have always chosen the white colour, but probably it does not make much of a difference if you choose another colour.\nlarger size:\n\n\n\nfoliar sensor, larger size\n\n\nGerber format\nEasyEDA format\nsmaller size:\n\n\n\nfoliar sensor, smaller size\n\n\nGerber format\nEasyEDA format",
     "crumbs": [
       "Home",
-      "hardware components",
+      "hardware",
       "PCBs"
     ]
   },
