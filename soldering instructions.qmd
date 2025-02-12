@@ -2,3 +2,6 @@
 title: "soldering instructions"
 ---
 
+Download link for a Video showing how to solder the LoRa module onto the main PCB:
+
+[solder RFM95](https://github.com/FylloClip/tutorial/blob/main/add_LoRa_module.mp4)
