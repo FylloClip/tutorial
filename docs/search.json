@@ -53,11 +53,18 @@
     "href": "Arduino code.html",
     "title": "Arduino code",
     "section": "",
-    "text": "in this part the code for the electronic control unit will be explained",
+    "text": "in this part the code for the electronic control unit will be explained"
+  },
+  {
+    "objectID": "code for Arduino.html",
+    "href": "code for Arduino.html",
+    "title": "code for Arduino",
+    "section": "",
+    "text": "here the code for Arduino will be explained",
     "crumbs": [
       "Home",
       "software",
-      "Arduino code"
+      "code for Arduino"
     ]
   }
 ]

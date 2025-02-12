@@ -23,7 +23,7 @@ website:
           - list of components.qmd
       - section: "software"
         contents:
-          - Arduino code.qmd
+          - code for Arduino.qmd
           - registration on TTS (The Things Stack).qmd
       - section: "assembly"
         contents:
