@@ -17,20 +17,18 @@ website:
     contents:
       - text: "Introduction"
         href: introduction.qmd
-      - section: "hardware components"
+      - section: "hardware"
         contents:
           - PCBs.qmd
           - list of components.qmd
-      - section: "r coding"
+      - section: "software"
         contents:
-          - pipe.qmd
-          - clean_data.qmd
-          - layout-knitr.qmd
-          - layout-jupyter.qmd
-      - section: advanced.qmd
+          - Arduino code.qmd
+          - registration on TTS (The Things Stack).qmd
+      - section: "assembly"
         contents:
-          - raw-code.qmd
-          - custom-theme.qmd
+          - soldering instructions.qmd
+          - programming.qmd
       - acknowlegment.qmd
 
 format:
