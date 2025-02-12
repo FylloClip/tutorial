@@ -66,5 +66,17 @@
       "software",
       "code for Arduino"
     ]
+  },
+  {
+    "objectID": "soldering instructions.html",
+    "href": "soldering instructions.html",
+    "title": "soldering instructions",
+    "section": "",
+    "text": "Video showing how to solder the LoRa module onto the main PCB:\nsolder RFM95",
+    "crumbs": [
+      "Home",
+      "assembly",
+      "soldering instructions"
+    ]
   }
 ]
