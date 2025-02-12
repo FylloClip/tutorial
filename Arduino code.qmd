@@ -1,5 +1,0 @@
----
-title: "Arduino code"
----
-
-in this part the code for the electronic control unit will be explained
