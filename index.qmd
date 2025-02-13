@@ -2,6 +2,8 @@
 title: "FylloClip tutorial"
 ---
 
-This is a Quarto website.
+This tutorial is intended to provide all the information needed to build a fully functional FylloClip module capable of remote data transmission via the LoRaWAN network. It will guide you from ordering PCBs (printed circuit boards), purchasing electronic components, assembling and programming the system, to setting up remote data transmission.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+![![](images/clipboard-2063268666.png){width="440"}](images/clipboard-4003555692.png){width="440"}
+
+![![](images/clipboard-4098331137.png){width="440"}](images/clipboard-706638693.png){width="440"}

@@ -1,35 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "FylloClip tutorial",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "introduction.html",
-    "href": "introduction.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "This tutorial is intended to provide all the necessary information for building a fully functional FylloClip module capable of transmitting data remotely via the LoRaWAN network. It will guide you from ordering PCBs (printed circuit boards), buying electronic components, assembly of the system and programming to setting up the remote data transmission.",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "list of components.html",
-    "href": "list of components.html",
-    "title": "list of components",
-    "section": "",
-    "text": "here follows a list of all the required electronic components:",
-    "crumbs": [
-      "Home",
-      "hardware",
-      "list of components"
-    ]
-  },
-  {
     "objectID": "PCBs.html",
     "href": "PCBs.html",
     "title": "PCBs",
@@ -42,18 +12,16 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "instructions for soldering.html",
+    "href": "instructions for soldering.html",
+    "title": "instructions for soldering",
     "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "Arduino code.html",
-    "href": "Arduino code.html",
-    "title": "Arduino code",
-    "section": "",
-    "text": "in this part the code for the electronic control unit will be explained"
+    "text": "Download link for a Video showing how to solder the LoRa module onto the main PCB:\nsolder RFM95",
+    "crumbs": [
+      "Home",
+      "assembly",
+      "instructions for soldering"
+    ]
   },
   {
     "objectID": "code for Arduino.html",
@@ -68,27 +36,29 @@
     ]
   },
   {
-    "objectID": "soldering instructions.html",
-    "href": "soldering instructions.html",
-    "title": "soldering instructions",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Download link for a Video showing how to solder the LoRa module onto the main PCB:\nsolder RFM95\ndo geat eppes net",
-    "crumbs": [
-      "Home",
-      "assembly",
-      "soldering instructions"
-    ]
+    "text": "About this site"
   },
   {
-    "objectID": "instructions for soldering.html",
-    "href": "instructions for soldering.html",
-    "title": "instructions for soldering",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "FylloClip tutorial",
     "section": "",
-    "text": "Download link for a Video showing how to solder the LoRa module onto the main PCB:\nsolder RFM95",
+    "text": "This tutorial is intended to provide all the information needed to build a fully functional FylloClip module capable of remote data transmission via the LoRaWAN network. It will guide you from ordering PCBs (printed circuit boards), purchasing electronic components, assembling and programming the system, to setting up remote data transmission."
+  },
+  {
+    "objectID": "list of components.html",
+    "href": "list of components.html",
+    "title": "list of components",
+    "section": "",
+    "text": "here follows a list of all the required electronic components:",
     "crumbs": [
       "Home",
-      "assembly",
-      "instructions for soldering"
+      "hardware",
+      "list of components"
     ]
   }
 ]

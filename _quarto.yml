@@ -9,14 +9,15 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+    tools:
+      - icon: github
+        href: github.com
 
 
   sidebar:
     style: "docked"
     search: true
     contents:
-      - text: "Introduction"
-        href: introduction.qmd
       - section: "hardware"
         contents:
           - PCBs.qmd
