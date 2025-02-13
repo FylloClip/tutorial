@@ -11,7 +11,7 @@ website:
       - about.qmd
     tools:
       - icon: github
-        href: github.com
+        href: https://github.com/
 
 
   sidebar:
