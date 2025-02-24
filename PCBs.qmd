@@ -16,7 +16,7 @@ The files are provided in two different formats, gerber and EasyEDA. The gerber 
 
 #### **FylloClip sensors**
 
-When ordering the foliar sensors, please make sure to select a PCB **thickness of 1 mm**. If the thickness is more than 1 mm, the sensor will be too stiff an difficult to be placed on a leaf. I have always chosen the white colour, but probably it does not make much of a difference if you choose another colour.
+When ordering the foliar sensors, [please make sure to select a PCB **thickness of 1 mm**]{.underline}. If the thickness is more than 1 mm, the sensor will be too stiff an difficult to be placed on a leaf. I have always chosen the white colour, but probably it does not make much of a difference if you choose another colour.
 
 **larger size:**
 

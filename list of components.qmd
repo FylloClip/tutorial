@@ -2,4 +2,21 @@
 title: "list of components"
 ---
 
-here follows a list of all the required electronic components:
+here a list of all the required electronic components:
+
+|  |  |
+|----|----|
+| **component**​ | **link**​ |
+| photodiode​ | [https://www.reichelt.com](https://www.reichelt.com/it/de/silizium-pin-fotodiode-400-1100nm-150-5-mm-sfh-203-p-p60569.html?CCOUNTRY=446&LANGUAGE=it&GROUPID=3045&START=0&OFFSET=16&SID=94aac536f170a0a7477a762bde84d06fbc967f64e3d089d132e8e&LANGUAGE=DE&&r=1)​ |
+| microcontroller atmega328 with bootloader for Arduino Pro Mini 3.3V​ | [https://www.reichelt.com](https://www.reichelt.com/it/de/8-bit-atmega-avr-mikrocontroller-32-kb-20-mhz-pdip-28-atmega-328p-pu-p119685.html?search=atmega328&&r=1) (you need to burn the bootloader onto the chip by yourself)​ |
+| battery holder​ | [https://www.reichelt.com](https://www.reichelt.com/it/de/batteriehalter-fuer-2-mignonzellen-aa--halter-2xaaz-p113169.html?&trstct=pos_9&nbc=1)​ |
+| Crystal 8 Mhz​ | [https://www.reichelt.com](https://www.reichelt.com/it/de/standardquarz-grundton-8-000000-mhz-8-0000-hc49u-s-p32845.html?&trstct=pos_3&nbc=1)​ |
+| LoRa mosule RFM95w​ | [https://www.soselectronic.com](https://www.soselectronic.com/de/products/hoperf/rfm95w-868-s2r-1-180936?query=rfm95w)​ |
+| Socket for microcontroller​ | [https://www.reichelt.com](https://www.reichelt.com/it/de/ic-sockel-28-polig-doppelter-federkontakt-gs-28-s-p86281.html?&trstct=pos_2&nbc=1%E2%80%8B)​ |
+| Male header pins ​ | [https://www.reichelt.com](https://www.reichelt.com/it/de/stiftleiste-20-polig-raster-2-54mm-bkl-10120204-p235649.html?&trstct=pol_3&nbc=1%E2%80%8B)​ |
+| Female header pins​ | <https://www.reichelt.com/it/de/buchsenleiste-2-54mm-1x20-trennbar-verzinnt-fis-bl1-20-z-p283794.html?&trstct=pol_1&nbc=1> (only in case you want to use female headers for the serial port)​ |
+| Resistor 4.7K​ | [https://www.reichelt.com](https://www.reichelt.com/it/de/widerstand-kohleschicht-4-7-kohm-0207-250-mw-5--1-4w-4-7k-p1425.html?&trstct=pos_12&nbc=1)​ |
+| Resistor 10K​ | [https://www.reichelt.com](https://www.reichelt.com/it/de/widerstand-kohleschicht-10-kohm-0207-250-mw-5--1-4w-10k-p1338.html?search=10+K&&r=1)​ |
+| Capacitor 100nF​ | [https://www.reichelt.com](https://www.reichelt.com/it/de/vielschicht-kerko-100-nf-50-100-v-z5u-20-rm-2-5-z5u-2-5-100n-p22977.html?&trstct=pos_7&nbc=1)​ |
+| Capacitor 22pF​ | [https://www.reichelt.com](https://www.reichelt.com/it/de/keramik-kondensator-22-pf-10-npo-500-v-rm-5-kerko-500-22p-p9330.html?&trstct=pos_5&nbc=1)​ |
+| Step-up voltage regulator​ | [https://www.aliexpress.com](https://www.aliexpress.com/item/1005005528299048.html?src=google&src=google&albch=shopping&acnt=272-267-0231&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=it1005005528299048&ds_e_product_merchant_id=107683874&ds_e_product_country=IT&ds_e_product_language=it&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=20705056984&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gclid=CjwKCAiArLyuBhA7EiwA-qo80OdIKkXU049mXL8Nw6Rd1YYpgGYMHQFGFjUoBtIqP0zRigw9JsqcmBoC64UQAvD_BwE&aff_fcid=fcdcee6878124ed6917712ecb1d9f667-1708079187469-06628-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=fcdcee6878124ed6917712ecb1d9f667-1708079187469-06628-UneMJZVf&terminal_id=76a9887d1acb48cfa34b52964de95161&afSmartRedirect=y&gatewayAdapt=glo2ita)​ |
