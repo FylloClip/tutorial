@@ -14,7 +14,7 @@ In addition, for your own use, you can assign an ID-number from 0 - 99 to each d
 
 ![TinyLora library](tinylora.png)
 
-![select the correct frequency band for your region](frequency_settings.png)
+![select the correct frequency band for your region](frequency_settings.png){width="600"}
 
 Download link for the Arduino code:
 
