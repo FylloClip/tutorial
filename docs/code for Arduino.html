@@ -226,8 +226,14 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Here you find the code (or ‘sketch’, as it is called in Arduino language), which you need to upload onto the microcontroller board. This sketch includes all the functions and routines for the system to operate.</p>
 <p>There are a few things to explain about this sketch. It is designed to run the FylloClip module in ABP (activation by personalization) mode, which is one of two possibles modes of establishing a connection of a device to a LoRa network. This is not the officially recommended mode (which would be over the air activation, or OTAA), but it has the advantage of using a much more lightweight library (TinyLoRa) and that under some circumstances it might use less power.</p>
-<p>The ABP mode of activating the device requires 3 unique identification codes to be inserted into the sketch before uploading it to the device. These are the <strong>network session key</strong> (NwkSkey), the <strong>application session key</strong> (AppSkey) and <strong>device address</strong> (DevAddr). You will obtain these codes when registering a new end device on the TTS console, after creating your own personal account there.</p>
-<p><img src="sketch.png" class="img-fluid" width="1000"></p>
+<p>The ABP mode of activating the device requires 3 unique identification keys to be inserted into the sketch before uploading it to the device. These are the <strong>network session key</strong> (NwkSkey), the <strong>application session key</strong> (AppSkey) and <strong>device address</strong> (DevAddr). You will obtain these codes when registering a new end device on the TTS console, after creating your own personal account there. It is important to copy and paste the keys in the hexadecimal format displaying an 0x in front of each number</p>
+<p>In addition, for your own use, you can assign an ID-number from 0 - 99 to each device.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="sketch.png" class="img-fluid figure-img" width="1000"></p>
+<figcaption>part of the Arduino sketch with the ID- number in line 11 and the identification keys in lines 15, 18 and 21.</figcaption>
+</figure>
+</div>
 <p>Download link for the Arduino code:</p>
 <p><a href="https://github.com/FylloClip/tutorial/blob/main/docs/Arduino%20code/FylloClip_2024/FylloClip_2024.ino">Arduino code</a></p>
 

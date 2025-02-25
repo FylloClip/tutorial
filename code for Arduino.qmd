@@ -8,9 +8,13 @@ There are a few things to explain about this sketch. It is designed to run the F
 
 The ABP mode of activating the device requires 3 unique identification keys to be inserted into the sketch before uploading it to the device. These are the **network session key** (NwkSkey), the **application session key** (AppSkey) and **device address** (DevAddr). You will obtain these codes when registering a new end device on the TTS console, after creating your own personal account there. It is important to copy and paste the keys in the hexadecimal format displaying an 0x in front of each number
 
-In addition, you can assign an ID-number from 0 - 99 to each device.
+In addition, for your own use, you can assign an ID-number from 0 - 99 to each device.
 
-![part of the Arduino sketch with the identification keys](sketch.png){width="1000"}
+![part of the Arduino sketch with the ID- number in line 11 and the identification keys in lines 15, 18 and 21.](sketch.png){width="1000"}
+
+![TinyLora library](tinylora.png)
+
+![select the correct frequency band for your region](frequency_settings.png)
 
 Download link for the Arduino code:
 
