@@ -14,7 +14,15 @@ In addition, for your own use, you can assign an ID-number from 0 - 99 to each d
 
 ![TinyLora library](tinylora.png)
 
-![select the correct frequency band for your region](frequency_settings.png){width="600"}
+![select the correct frequency band for your region by commenting/uncommenting the respective lines of code](frequency_settings.png){width="600"} For uploading the code you need a FTDI adapter. On the adapter select 3.3V power supply by positioning the jumper Set the adapter to 3.3V supply voltage by positioning the corresponding jumper.
+
+![FTDI adapter](images/FTDI.png)
+
+If you have installed male pin headers on your microcontroller board, you need to solder a female pin connector on your FTDI adapter:
+
+![FTFDI adapter with modified connector pins](images/FTDI_2.png){width="400"}
+
+![FTDI adapter connected to microprocessor board for programming](images/clipboard-2070729821.png){width="300"}
 
 Download link for the Arduino code:
 
