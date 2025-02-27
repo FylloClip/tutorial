@@ -14,7 +14,9 @@ In addition, for your own use, you can assign an ID-number from 0 - 99 to each d
 
 ![*TinyLora library*](tinylora.png)
 
-![select the correct frequency band for your region by commenting/uncommenting the respective lines of code](frequency_settings.png){width="600"}
+![*select the correct frequency band for your region by commenting/uncommenting the respective lines of code*](frequency_settings.png){width="600"}
+
+You need also to install the Low-Power library from Rocket Scream, which allows the board to go into power-saving sleep mode between measurements.
 
 For uploading the code you need a FTDI adapter. On the adapter select 3.3V power supply by positioning the jumper
 
