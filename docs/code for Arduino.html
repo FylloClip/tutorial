@@ -274,7 +274,15 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>Download link for the Arduino code:</p>
-<p><a href="https://github.com/FylloClip/tutorial/blob/main/docs/Arduino%20code/FylloClip_2024/FylloClip_2024.ino">Arduino code</a></p>
+<p><a href="https://github.com/FylloClip/tutorial/blob/main/docs/Arduino%20code/FylloClip_2025/FylloClip_2025.ino">Arduino code</a></p>
+<p>Once uploaded the sketch, you should be able to communicate with the board via the serial terminal of the IDE. the required settings for the serial monitor are ‘no line ending’ and ‘9600 baud’:</p>
+<p><img src="images/clipboard-1287549793.png" class="img-fluid"></p>
+<p>As soon as you start the serial terminal, the menu shown in the above screenshot appears. It will remain active only for a few seconds, after which the board goes into sleep mode. You can reactivate the menu by closing the serial terminal and opening it again. Then insert immediately the one of the letters of the possible options in the menu, followed by ‘enter’.</p>
+<p>s - provides you an overview of actual settings and data</p>
+<p>r - resets the frame counter to zero.</p>
+<p>z - triggers the board to take sensor measurements and to send a data packet</p>
+<p>a - allows you to set the desired time interval with the following options: 01-05-10-15-20-30-60 minutes. Please enter always double digits, e.g.&nbsp;05 instead of 5. A time interval of 10 minutes has proved to be appropriate.</p>
+<p>f - allows you to set the spreading factor for LoRa radio transmission, ranging from 07 to 12. Increasing values mean a longer distance of data transmission, but also at a higher energy and time consumption. So better start with 07 and increase only if necessary.</p>
 
 
 
