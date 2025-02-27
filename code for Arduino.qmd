@@ -2,7 +2,7 @@
 title: "code for Arduino"
 ---
 
-In order to become fully operational, a software programme needs to be uploaded to the microcontroller board. Here you find this code (or 'sketch', as it is called in Arduino language), for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e. to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud.
+In order to become fully operational, a software programme needs to be uploaded to the microcontroller board. Here you find this code (or 'sketch', as it is called in Arduino language) for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e. to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud.
 
 There are a few things to explain about this sketch. It is designed to run the FylloClip module in ABP (activation by personalization) mode, which is one of two possibles modes of establishing a connection of a device to a LoRa network. This is not the officially recommended mode (which would be over the air activation, or OTAA), but it has the advantage of using a much more lightweight library (TinyLoRa) and that under some circumstances it uses less power.
 
