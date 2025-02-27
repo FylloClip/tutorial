@@ -87,11 +87,9 @@ void setup() {
     alarm_period = 32;
   }
 
-
   if (set_value == 10) {
     alarm_period = 75;
   }
-
 
   if (set_value == 15) {
     alarm_period = 99;
@@ -100,7 +98,6 @@ void setup() {
   if (set_value == 20) {
     alarm_period = 132;
   }
-
 
   if (alarm_period == 198) {
     set_value = 30;
@@ -113,7 +110,6 @@ void setup() {
   if (set_value == 60) {
     alarm_period = 398;
   }
-
 
 
   // Initialize LoRa
@@ -150,9 +146,7 @@ void setup() {
 }
 
 
-
 void loop() {
-
 
   measure_and_send();
 
@@ -168,10 +162,8 @@ void loop() {
 
 void sleepNow() {  // here we put the arduino to sleep
 
-
   Serial.println(F("sleep... "));
   delay(100);
-
 
   for (j = 0; j <= alarm_period; j++) {  //set length of sleep period
 
@@ -186,7 +178,6 @@ void measure_and_send() {
   get_capacitance();
   get_voltage();
 
-
   pinMode(RAD_1, INPUT);  //disconnect GND
   pinMode(RAD_2, INPUT);  //disconnect GND
 
@@ -199,7 +190,6 @@ void measure_and_send() {
   mydata[6] = LC_2;
   mydata[7] = lowByte(batt_val);
   mydata[8] = highByte(batt_val);
-
 
   frame_counter = frame_counter + 1;
   if (frame_counter > 65000) {
@@ -286,6 +276,8 @@ void actual_read() {  // actual values
   Serial.println(set_value);
   Serial.print(F("node_ID: "));
   Serial.println(node_ID);
+  Serial.print(F("SF: "));
+  Serial.println(SF);
   saymyname();
 }
 
@@ -380,14 +372,12 @@ void get_capacitance() {
 }
 
 void get_voltage() {  //measure battery voltage at AD0
-  Serial.print(F(" Batt: "));
   value = 0;
   for (i = 0; i <= 9; i++) {  //take 10 readings and calculate mean value
     value = value + analogRead(batt_v);
     delay(100);
   }
   batt_val = value / 10;  //mean value of 10 measurements //transformation in volts will take place on the webserver
-  Serial.println(batt_val);
 }
 
 void set_sleep_period() {
