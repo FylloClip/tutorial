@@ -30,6 +30,8 @@ When ordering the foliar sensors, [please make sure to select a PCB **thickness 
 
 ![foliar sensor, smaller size](FylloClip_small_size.jpg){fig-align="left" width="120"}
 
+![foliar sensor, smaller size](images/clipboard-2212851997.png){width="120"}
+
 [Gerber format](https://github.com/FylloClip/FylloClip-foliar-sensor/blob/main/PCB%20production%20files/foliar_sensor/gerber/Gerber_small_size.zip)
 
 [EasyEDA format](https://github.com/FylloClip/FylloClip-foliar-sensor/blob/main/PCB%20production%20files/foliar_sensor/EasyEda/small_size_sensor.json)

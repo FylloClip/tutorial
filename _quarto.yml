@@ -18,15 +18,15 @@ website:
     style: "docked"
     search: true
     contents:
-      - section: "hardware"
+      - section: "***HARDWARE***"
         contents:
           - PCBs.qmd
           - list of components.qmd
-      - section: "software"
+      - section: "***SOFTWARE***"
         contents:
           - code for Arduino.qmd
           - registration on TTS (The Things Stack).qmd
-      - section: "assembly"
+      - section: "***ASSEMBLY***"
         contents:
           - instructions for soldering.qmd
           - programming.qmd
