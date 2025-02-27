@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>code for Arduino – FylloClip tutorial</title>
+<title>Uploading the code – FylloClip tutorial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./code for Arduino.html">software</a></li><li class="breadcrumb-item"><a href="./code for Arduino.html">code for Arduino</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./code for Arduino.html">software</a></li><li class="breadcrumb-item"><a href="./code for Arduino.html">Uploading the code</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -163,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./code for Arduino.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">code for Arduino</span></a>
+ <span class="menu-text">Uploading the code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -205,9 +205,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./code for Arduino.html">software</a></li><li class="breadcrumb-item"><a href="./code for Arduino.html">code for Arduino</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./code for Arduino.html">software</a></li><li class="breadcrumb-item"><a href="./code for Arduino.html">Uploading the code</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">code for Arduino</h1>
+<h1 class="title">Uploading the code</h1>
 </div>
 
 
@@ -224,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In order to become fully operational, a software programme needs to be uploaded to the microcontroller board. Here you find this code (or ‘sketch’, as it is called in Arduino language), for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e.&nbsp;to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud.</p>
+<p>In order to become fully operational, a software programme needs to be uploaded to the microcontroller board. Here you find this code (or ‘sketch’, as it is called in Arduino language) for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e.&nbsp;to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud.</p>
 <p>There are a few things to explain about this sketch. It is designed to run the FylloClip module in ABP (activation by personalization) mode, which is one of two possibles modes of establishing a connection of a device to a LoRa network. This is not the officially recommended mode (which would be over the air activation, or OTAA), but it has the advantage of using a much more lightweight library (TinyLoRa) and that under some circumstances it uses less power.</p>
 <p>The ABP mode of activating the device requires 3 unique identification keys to be inserted into the sketch before uploading it to the device. These are the <strong>network session key</strong> (NwkSkey), the <strong>application session key</strong> (AppSkey) and <strong>device address</strong> (DevAddr). You will obtain these codes when registering a new end device on the TTS console, after creating your own personal account there. It is important to copy and paste the keys in the hexadecimal format displaying an 0x in front of each number</p>
 <p>In addition, for your own use, you can assign an ID-number from 0 - 99 to each device.</p>
@@ -278,11 +278,11 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://github.com/FylloClip/tutorial/blob/main/docs/Arduino%20code/FylloClip_2025/FylloClip_2025.ino">Arduino code</a></p>
 <p>Once uploaded the sketch, you should be able to communicate with the board via the serial terminal of the IDE. the required settings for the serial monitor are ‘no line ending’ and ‘9600 baud’:</p>
 <p><img src="images/clipboard-1287549793.png" class="img-fluid"></p>
-<p>As soon as you start the serial terminal, the menu shown in the above screenshot appears. It will remain active only for a few seconds, after which the board goes into sleep mode. You can reactivate the menu by closing the serial terminal and opening it again. Then insert immediately the one of the letters of the possible options in the menu, followed by ‘enter’.</p>
+<p>As soon as you start the serial terminal, the menu shown in the above screenshot appears. It will remain active only for a few seconds, after which the board goes into sleep mode. You can reactivate the menu by closing the serial terminal and opening it again. Then type immediately one of the letters of the options in the menu and hit ‘enter’.</p>
 <p>s - provides you an overview of actual settings and data</p>
 <p>r - resets the frame counter to zero.</p>
 <p>z - triggers the board to take sensor measurements and to send a data packet</p>
-<p>a - allows you to set the desired time interval with the following options: 01-05-10-15-20-30-60 minutes. Please enter always double digits, e.g.&nbsp;05 instead of 5. A time interval of 10 minutes has proved to be appropriate.</p>
+<p>a - allows you to set the desired time interval between successive measurements, with the following options: 01-05-10-15-20-30-60 minutes. Please enter always double digits, e.g.&nbsp;05 instead of 5. A time interval of 10 minutes has proved to be appropriate.</p>
 <p>f - allows you to set the spreading factor for LoRa radio transmission, ranging from 07 to 12. Increasing values mean a longer distance of data transmission, but also at a higher energy and time consumption. So better start with 07 and increase only if necessary.</p>
 
 

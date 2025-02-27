@@ -1,5 +1,5 @@
 ---
-title: "code for Arduino"
+title: "Uploading the code"
 ---
 
 In order to become fully operational, a software programme needs to be uploaded to the microcontroller board. Here you find this code (or 'sketch', as it is called in Arduino language) for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e. to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud.
@@ -40,7 +40,7 @@ Once uploaded the sketch, you should be able to communicate with the board via t
 
 ![](images/clipboard-1287549793.png)
 
-As soon as you start the serial terminal, the menu shown in the above screenshot appears. It will remain active only for a few seconds, after which the board goes into sleep mode. You can reactivate the menu by closing the serial terminal and opening it again. Then insert immediately the one of the letters of the possible options in the menu, followed by 'enter'.
+As soon as you start the serial terminal, the menu shown in the above screenshot appears. It will remain active only for a few seconds, after which the board goes into sleep mode. You can reactivate the menu by closing the serial terminal and opening it again. Then type immediately one of the letters of the options in the menu and hit 'enter'.
 
 s - provides you an overview of actual settings and data
 
@@ -48,6 +48,6 @@ r - resets the frame counter to zero.
 
 z - triggers the board to take sensor measurements and to send a data packet
 
-a - allows you to set the desired time interval with the following options: 01-05-10-15-20-30-60 minutes. Please enter always double digits, e.g. 05 instead of 5. A time interval of 10 minutes has proved to be appropriate.
+a - allows you to set the desired time interval between successive measurements, with the following options: 01-05-10-15-20-30-60 minutes. Please enter always double digits, e.g. 05 instead of 5. A time interval of 10 minutes has proved to be appropriate.
 
 f - allows you to set the spreading factor for LoRa radio transmission, ranging from 07 to 12. Increasing values mean a longer distance of data transmission, but also at a higher energy and time consumption. So better start with 07 and increase only if necessary.
