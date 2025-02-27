@@ -2,9 +2,9 @@
 title: "code for Arduino"
 ---
 
-Here you find the code (or 'sketch', as it is called in Arduino language), which you need to upload onto the microcontroller board. This sketch includes all the functions and routines for the system to operate.
+In order to become fully operational, a software programme needs to be uploaded to the microcontroller board. Here you find this code (or 'sketch', as it is called in Arduino language), for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e. to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud.
 
-There are a few things to explain about this sketch. It is designed to run the FylloClip module in ABP (activation by personalization) mode, which is one of two possibles modes of establishing a connection of a device to a LoRa network. This is not the officially recommended mode (which would be over the air activation, or OTAA), but it has the advantage of using a much more lightweight library (TinyLoRa) and that under some circumstances it might use less power.
+There are a few things to explain about this sketch. It is designed to run the FylloClip module in ABP (activation by personalization) mode, which is one of two possibles modes of establishing a connection of a device to a LoRa network. This is not the officially recommended mode (which would be over the air activation, or OTAA), but it has the advantage of using a much more lightweight library (TinyLoRa) and that under some circumstances it uses less power.
 
 The ABP mode of activating the device requires 3 unique identification keys to be inserted into the sketch before uploading it to the device. These are the **network session key** (NwkSkey), the **application session key** (AppSkey) and **device address** (DevAddr). You will obtain these codes when registering a new end device on the TTS console, after creating your own personal account there. It is important to copy and paste the keys in the hexadecimal format displaying an 0x in front of each number
 
