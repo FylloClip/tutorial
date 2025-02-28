@@ -29,7 +29,7 @@ website:
       - section: "***ASSEMBLY***"
         contents:
           - assembly_instructions.qmd
-      - acknowlegment.qmd
+      - outlook.qmd
 
 format:
   html:
