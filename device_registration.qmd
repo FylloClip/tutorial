@@ -7,3 +7,5 @@ Each device needs to be registered on the 'The Things Network' platform (TTN) fo
 First, create a free account on The Things Network: <https://www.thethingsnetwork.org/get-started>
 
 ![](images/clipboard-3534874080.png){width="500"}
+
+Once you have created your account, you need to create a so called 'application', which can be considered as a collection of end devices which can be handled in a similar manner, concerning the the structure and transmission of the data.
