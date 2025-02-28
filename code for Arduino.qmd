@@ -1,5 +1,5 @@
 ---
-title: "Uploading the code"
+title: "uploading the code"
 ---
 
 In order to become fully operational, a software programme needs to be uploaded to the microcontroller board. Here you find this code (or 'sketch', as it is called in Arduino language) for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e. to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud.
