@@ -34,7 +34,7 @@ Before uploading the sketch make sure you have the correct board settings in the
 
 Download link for the Arduino code:
 
-[Arduino code](https://github.com/FylloClip/tutorial/blob/main/ressources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino)
+[Arduino ](https://github.com/FylloClip/tutorial/blob/main/ressources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino)[code](https://github.com/FylloClip/tutorial/blob/main/ressources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino)
 
 Once uploaded the sketch, you should be able to communicate with the board via the serial terminal of the IDE. the required settings for the serial monitor are 'no line ending' and '9600 baud':
 
