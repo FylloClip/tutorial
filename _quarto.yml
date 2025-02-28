@@ -28,8 +28,7 @@ website:
           - device_registration.qmd
       - section: "***ASSEMBLY***"
         contents:
-          - instructions for soldering.qmd
-          - programming.qmd
+          - assembly_instructions.qmd
       - acknowlegment.qmd
 
 format:
