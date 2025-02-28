@@ -8,4 +8,20 @@ First, create a free account on The Things Network: <https://www.thethingsnetwor
 
 ![](images/clipboard-3534874080.png){width="500"}
 
-Once you have created your account, you need to create a so called 'application', which can be considered as a collection of end devices which can be handled in a similar manner, concerning the the structure and transmission of the data.
+Once you have created your account, you need to create a so called 'application', which can be considered as a collection of end devices to be handled in a similar manner, concerning structure and transmission of their data.
+
+![](images/clipboard-93905321.png){width="650"}
+
+![](images/clipboard-843987135.png){width="650"}
+
+Next, you can start with the registration of end devices (each FylloClip module would be a single new end device)
+
+![](images/clipboard-3758552285.png){width="650"}
+
+Follow the settings in the subsequent screenshots (if you're located outside of Europe select the frequency plan applicable to your region).
+
+![![](images/clipboard-2069720664.png)](images/clipboard-1395047752.png){width="650"}
+
+next, select ABP and generate the DevEUI and the various keys:
+
+![](images/clipboard-2069720664.png)

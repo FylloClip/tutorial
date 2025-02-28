@@ -1,14 +1,26 @@
 [
   {
-    "objectID": "PCBs.html",
-    "href": "PCBs.html",
-    "title": "PCBs",
+    "objectID": "assembly_instructions.html",
+    "href": "assembly_instructions.html",
+    "title": "assembly instructions",
     "section": "",
-    "text": "Here you can download the production files for the PCB needed to create the control unit (Arduino board) as well as the PCBs used as foliar sensors.\nThe files are provided in two different formats, gerber and EasyEDA. The gerber files can be used directly to place an order with a PCB manufacturer, whereas the EasyEDA files can be uploaded to the EasyEDA PCB design software where they can be edited and modified before placing an order.\n\nArduino board\n\n\n\nArduino board PCB\n\n\nGerber format\nEasyEDA format\n\n\nFylloClip sensors\nWhen ordering the foliar sensors, please make sure to select a PCB thickness of 1 mm. If the thickness is more than 1 mm, the sensor will be too stiff an difficult to be placed on a leaf. I have always chosen the white colour, but probably it does not make much of a difference if you choose another colour.\nlarger size:\n\n\n\nfoliar sensor, larger size\n\n\nGerber format\nEasyEDA format\nsmaller size:\n\n\n\nfoliar sensor, smaller size\n\n\nGerber format\nEasyEDA format",
+    "text": "Download link for a Video showing how to solder the LoRa module onto the main PCB:\nsolder RFM95",
+    "crumbs": [
+      "Home",
+      "***ASSEMBLY***",
+      "assembly instructions"
+    ]
+  },
+  {
+    "objectID": "list of components.html",
+    "href": "list of components.html",
+    "title": "electronic components",
+    "section": "",
+    "text": "here a list of all the required electronic components:\n\n\n\ncomponent​\nlink​\n\n\nphotodiode​\nhttps://www.reichelt.com​\n\n\nmicrocontroller atmega328 with bootloader for Arduino Pro Mini 3.3V​\nhttps://www.reichelt.com (you need to burn the bootloader onto the chip by yourself)​\n\n\nbattery holder​\nhttps://www.reichelt.com​\n\n\nCrystal 8 Mhz​\nhttps://www.reichelt.com​\n\n\nLoRa mosule RFM95w​\nhttps://www.soselectronic.com​\n\n\nSocket for microcontroller​\nhttps://www.reichelt.com​\n\n\nMale header pins ​\nhttps://www.reichelt.com​\n\n\nFemale header pins​\nhttps://www.reichelt.com (only in case you want to use female headers for the serial port)​\n\n\nResistor 4.7K​\nhttps://www.reichelt.com​\n\n\nResistor 10K​\nhttps://www.reichelt.com​\n\n\nCapacitor 100nF​\nhttps://www.reichelt.com​\n\n\nCapacitor 22pF​\nhttps://www.reichelt.com​\n\n\nStep-up voltage regulator​\nhttps://www.aliexpress.com​",
     "crumbs": [
       "Home",
       "***HARDWARE***",
-      "PCBs"
+      "electronic components"
     ]
   },
   {
@@ -31,30 +43,11 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "assembly_instructions.html",
-    "href": "assembly_instructions.html",
-    "title": "assembly instructions",
-    "section": "",
-    "text": "Download link for a Video showing how to solder the LoRa module onto the main PCB:\nsolder RFM95",
-    "crumbs": [
-      "Home",
-      "***ASSEMBLY***",
-      "assembly instructions"
-    ]
-  },
-  {
     "objectID": "device_registration.html",
     "href": "device_registration.html",
     "title": "device registration on TTN",
     "section": "",
-    "text": "Each device needs to be registered on the ‘The Things Network’ platform (TTN) for becoming fully operational.\nCreate account",
+    "text": "Each device needs to be registered on the ‘The Things Network’ platform (TTN) for becoming fully operational.\nFirst, create a free account on The Things Network: https://www.thethingsnetwork.org/get-started\n\nOnce you have created your account, you need to create a so called ‘application’, which can be considered as a collection of end devices to be handled in a similar manner, concerning structure and transmission of their data.",
     "crumbs": [
       "Home",
       "***SOFTWARE***",
@@ -62,15 +55,22 @@
     ]
   },
   {
-    "objectID": "list of components.html",
-    "href": "list of components.html",
-    "title": "electronic components",
+    "objectID": "PCBs.html",
+    "href": "PCBs.html",
+    "title": "PCBs",
     "section": "",
-    "text": "here a list of all the required electronic components:\n\n\n\ncomponent​\nlink​\n\n\nphotodiode​\nhttps://www.reichelt.com​\n\n\nmicrocontroller atmega328 with bootloader for Arduino Pro Mini 3.3V​\nhttps://www.reichelt.com (you need to burn the bootloader onto the chip by yourself)​\n\n\nbattery holder​\nhttps://www.reichelt.com​\n\n\nCrystal 8 Mhz​\nhttps://www.reichelt.com​\n\n\nLoRa mosule RFM95w​\nhttps://www.soselectronic.com​\n\n\nSocket for microcontroller​\nhttps://www.reichelt.com​\n\n\nMale header pins ​\nhttps://www.reichelt.com​\n\n\nFemale header pins​\nhttps://www.reichelt.com (only in case you want to use female headers for the serial port)​\n\n\nResistor 4.7K​\nhttps://www.reichelt.com​\n\n\nResistor 10K​\nhttps://www.reichelt.com​\n\n\nCapacitor 100nF​\nhttps://www.reichelt.com​\n\n\nCapacitor 22pF​\nhttps://www.reichelt.com​\n\n\nStep-up voltage regulator​\nhttps://www.aliexpress.com​",
+    "text": "Here you can download the production files for the PCB needed to create the control unit (Arduino board) as well as the PCBs used as foliar sensors.\nThe files are provided in two different formats, gerber and EasyEDA. The gerber files can be used directly to place an order with a PCB manufacturer, whereas the EasyEDA files can be uploaded to the EasyEDA PCB design software where they can be edited and modified before placing an order.\n\nArduino board\n\n\n\nArduino board PCB\n\n\nGerber format\nEasyEDA format\n\n\nFylloClip sensors\nWhen ordering the foliar sensors, please make sure to select a PCB thickness of 1 mm. If the thickness is more than 1 mm, the sensor will be too stiff an difficult to be placed on a leaf. I have always chosen the white colour, but probably it does not make much of a difference if you choose another colour.\nlarger size:\n\n\n\nfoliar sensor, larger size\n\n\nGerber format\nEasyEDA format\nsmaller size:\n\n\n\nfoliar sensor, smaller size\n\n\nGerber format\nEasyEDA format",
     "crumbs": [
       "Home",
       "***HARDWARE***",
-      "electronic components"
+      "PCBs"
     ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
