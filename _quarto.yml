@@ -25,7 +25,7 @@ website:
       - section: "***SOFTWARE***"
         contents:
           - code for Arduino.qmd
-          - registration on TTS (The Things Stack).qmd
+          - device_registration.qmd
       - section: "***ASSEMBLY***"
         contents:
           - instructions for soldering.qmd

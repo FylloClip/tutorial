@@ -24,6 +24,13 @@
     ]
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
     "objectID": "code for Arduino.html",
     "href": "code for Arduino.html",
     "title": "Uploading the code",
@@ -34,13 +41,6 @@
       "***SOFTWARE***",
       "Uploading the code"
     ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   },
   {
     "objectID": "index.html",
