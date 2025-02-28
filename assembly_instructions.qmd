@@ -1,5 +1,5 @@
 ---
-title: "instructions for soldering"
+title: "assembly instructions"
 ---
 
 Download link for a Video showing how to solder the LoRa module onto the main PCB:

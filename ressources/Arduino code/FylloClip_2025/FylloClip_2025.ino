@@ -24,7 +24,7 @@ uint8_t DevAddr[4] = { 0xAA, 0xAA, 0xAA, 0xAA };  // <-- Change this address for
 
 unsigned int frame_counter = 0;
 
-int alarm_period = 75;  //duration of sleep period  65 -> 10 minutes
+int alarm_period = 75;  //corresponds to a sleep interval of about 10 minutes, the exact duration of the interval may vary from device to device
 
 
 const int OUT_PIN_1 = 4;

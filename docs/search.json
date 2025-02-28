@@ -12,23 +12,11 @@
     ]
   },
   {
-    "objectID": "instructions for soldering.html",
-    "href": "instructions for soldering.html",
-    "title": "instructions for soldering",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "FylloClip tutorial",
     "section": "",
-    "text": "Download link for a Video showing how to solder the LoRa module onto the main PCB:\nsolder RFM95",
-    "crumbs": [
-      "Home",
-      "***ASSEMBLY***",
-      "instructions for soldering"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
+    "text": "This tutorial is intended to provide all the information needed to build a fully functional FylloClip module capable of remote data transmission via the LoRaWAN network. It will guide you from ordering PCBs (printed circuit boards), purchasing electronic components, assembling and programming the system, to setting up remote data transmission."
   },
   {
     "objectID": "code for Arduino.html",
@@ -43,11 +31,23 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "FylloClip tutorial",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "This tutorial is intended to provide all the information needed to build a fully functional FylloClip module capable of remote data transmission via the LoRaWAN network. It will guide you from ordering PCBs (printed circuit boards), purchasing electronic components, assembling and programming the system, to setting up remote data transmission."
+    "text": "About this site"
+  },
+  {
+    "objectID": "assembly_instructions.html",
+    "href": "assembly_instructions.html",
+    "title": "assembly instructions",
+    "section": "",
+    "text": "Download link for a Video showing how to solder the LoRa module onto the main PCB:\nsolder RFM95",
+    "crumbs": [
+      "Home",
+      "***ASSEMBLY***",
+      "assembly instructions"
+    ]
   },
   {
     "objectID": "list of components.html",
