@@ -4,4 +4,6 @@ title: "device registration on TTN"
 
 Each device needs to be registered on the 'The Things Network' platform (TTN) for becoming fully operational.
 
-[Create account](https://id.thethingsnetwork.org/oidc/interaction/aCorVZjuoGysjZePoJBx9/register)
+First, create a free account on The Things Network: <https://www.thethingsnetwork.org/get-started>
+
+![](images/clipboard-3534874080.png){width="500"}
