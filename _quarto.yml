@@ -29,10 +29,7 @@ website:
         contents:
           - code for Arduino.qmd
           - device_registration.qmd
-      - section: "***DATA STORAGE AND VISUALIZATION***"
-        contents:
           - get the data to a database
-          - visualize your data
       - section: "***DEPLOYING THE DEVICE***"
         contents:
           - testing the device

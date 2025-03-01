@@ -61,3 +61,5 @@ Move the cursor to the right side of the key fields to activate the formatting o
 ![](images/clipboard-1614228506.png)
 
 ![](images/clipboard-1320572242.png)
+
+You can also specify a unique ID number for your device (line 12 of the code), which may be helpful for later data handling. At this point the sketch id ready for upload onto your device.
