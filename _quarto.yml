@@ -22,13 +22,18 @@ website:
         contents:
           - PCBs.qmd
           - list of components.qmd
+      - section: "***ASSEMBLY***"
+        contents:
+          - assembly_instructions.qmd
       - section: "***SOFTWARE***"
         contents:
           - code for Arduino.qmd
           - device_registration.qmd
-      - section: "***ASSEMBLY***"
+      - section: "***DATA RECORDING AND VISUALIZATION***"
         contents:
-          - assembly_instructions.qmd
+          - get the data to the database.qmd
+          - visualize your data.qmd
+    
       - outlook.qmd
 
 format:
