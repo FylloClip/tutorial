@@ -194,22 +194,42 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text"><strong><em>DATA RECORDING AND VISUALIZATION</em></strong></span></a>
+ <span class="menu-text"><strong><em>RECORDING AND VISUALIZING DATA</em></strong></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
- <span class="menu-text">get the data to the database.qmd</span>
+ <span class="menu-text">get the data to the database</span>
   </li>
           <li class="sidebar-item">
- <span class="menu-text">visualize your data.qmd</span>
+ <span class="menu-text">visualize your data</span>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text"><strong><em>DEPLOYING THE DEVICE</em></strong></span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+ <span class="menu-text">testing the device</span>
+  </li>
+          <li class="sidebar-item">
+ <span class="menu-text">attaching the sensor to a leaf</span>
+  </li>
+          <li class="sidebar-item">
+ <span class="menu-text">data interpretation</span>
   </li>
       </ul>
   </li>
         <li class="sidebar-item">
- <span class="menu-text">outlook.qmd</span>
+ <span class="menu-text">outlook</span>
   </li>
     </ul>
     </div>
@@ -250,14 +270,27 @@ ul.task-list li input[type="checkbox"] {
 <p>Next, you can start with the registration of end devices (each FylloClip module would be a single new end device)</p>
 <p><img src="images/clipboard-3758552285.png" class="img-fluid" width="650"></p>
 <p>Follow the settings in the subsequent screenshots (if you’re located outside of Europe select the frequency plan applicable to your region).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/clipboard-1395047752.png" class="img-fluid figure-img" width="650"></p>
-<figcaption><img src="images/clipboard-2069720664.png" class="img-fluid figure-img"></figcaption>
-</figure>
-</div>
+<p><img src="images/clipboard-488402867.png" class="img-fluid" width="550"></p>
 <p>next, select ABP and generate the DevEUI and the various keys:</p>
-<p><img src="images/clipboard-2069720664.png" class="img-fluid"></p>
+<p><img src="images/clipboard-4107351814.png" class="img-fluid"></p>
+<p>After registration we have to edit the newly created device to add a few further and to copy the keys we need to insert into the Arduino sketch</p>
+<p><img src="images/clipboard-3783806657.png" class="img-fluid" width="600"></p>
+<p>Scroll down and expand the Network layer settings</p>
+<p><img src="images/clipboard-2029578782.png" class="img-fluid"></p>
+<p>Scroll down and open the advanced MAC settings</p>
+<p><img src="images/clipboard-1721138275.png" class="img-fluid" width="550"></p>
+<p>Click 9 times on the ‘add frequency’ button to add 9 empty fields</p>
+<p><img src="images/clipboard-3349742066.png" class="img-fluid"></p>
+<p>In those fields insert the following frequencies, this example reports the frequencies used for Europe (868 MHz frequency band), which are 868100000, 868300000, 868500000, 867100000, 867300000, 867500000, 867700000, 867900000, 868800000. Add the end save the changes.</p>
+<p><img src="images/clipboard-3505957760.png" class="img-fluid"></p>
+<p>Now we retrieve the keys to be inserted into the Arduino sketch. Return to ‘Device overview’</p>
+<p><img src="images/clipboard-399796964.png" class="img-fluid"></p>
+<p>Make NwkSKey and AppSKey visible</p>
+<p><img src="images/clipboard-794427737.png" class="img-fluid"></p>
+<p>Move the cursor to the right side of the key fields to activate the formatting options, the change the format as follows. At the end copy each key using the copy function and insert them in the respective positions of the <a href="https://github.com/FylloClip/tutorial/blob/main/ressources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino">Arduino sketch</a>.</p>
+<p><img src="images/clipboard-1854050922.png" class="img-fluid"></p>
+<p><img src="images/clipboard-1614228506.png" class="img-fluid"></p>
+<p><img src="images/clipboard-1320572242.png" class="img-fluid"></p>
 
 
 

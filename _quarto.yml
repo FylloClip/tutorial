@@ -29,12 +29,16 @@ website:
         contents:
           - code for Arduino.qmd
           - device_registration.qmd
-      - section: "***DATA RECORDING AND VISUALIZATION***"
+      - section: "***RECORDING AND VISUALIZING DATA***"
         contents:
-          - get the data to the database.qmd
-          - visualize your data.qmd
-    
-      - outlook.qmd
+          - get the data to the database
+          - visualize your data
+      - section: "***DEPLOYING THE DEVICE***"
+        contents:
+          - testing the device
+          - attaching the sensor to a leaf
+          - data interpretation
+      - outlook
 
 format:
   html:
