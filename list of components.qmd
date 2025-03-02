@@ -43,4 +43,5 @@ Here a detailed list of all the required electronic components with links to a p
 | Resistor 10K​ | [https://www.reichelt.com](https://www.reichelt.com/it/en/shop/product/carbon_film_resistor_1_4w_5_10_kilo-ohms-1338)​ |
 | Capacitor 100nF​ | [https://www.reichelt.com](https://www.reichelt.com/it/en/shop/product/multilayer_capacitor_100_nf_50_100_v_z5u_20_rm_2_5-22977)​ |
 | Capacitor 22pF​ | [https://www.reichelt.com](https://www.reichelt.com/it/en/shop/product/ceramic_capacitor_22_pf_10_npo_500_v_rm_5-9330)​ |
+| connector cable | [https://www.reichelt.com](https://www.reichelt.com/it/en/shop/product/control_line_4_x_0_14_mm_unshielded_10_m_coil-10365) |
 | Step-up voltage regulator​ | [https://www.aliexpress.com](https://www.aliexpress.com/item/1005005528299048.html)​ |
