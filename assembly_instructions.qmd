@@ -42,14 +42,14 @@ Try to use very thin and lightweight cables of about 1mm outer diameter
 
   ![](images/clipboard-3639932492.png)
 
-|                       |                      |     |
-|-----------------------|----------------------|-----|
-| ​microcontroller board | ​FylloClip sensor no. |     |
-| 1​                     | 1                    | \+  |
-| 2​                     | 1                    | \-  |
-| 3​                     | 2                    | \+  |
-| 4​                     | 2                    | \-  |
-| 5​                     | 1                    | C   |
-| 6​                     | 1                    | C   |
-| 7​                     | 2                    | C   |
-| 8​                     | 2                    | C   |
+|                       |                      |                    |
+|-----------------------|----------------------|--------------------|
+| ​microcontroller board | ​FylloClip sensor no. | solder pad marking |
+| 1​                     | 1                    | \+                 |
+| 2​                     | 1                    | \-                 |
+| 3​                     | 2                    | \+                 |
+| 4​                     | 2                    | \-                 |
+| 5​                     | 1                    | C                  |
+| 6​                     | 1                    | C                  |
+| 7​                     | 2                    | C                  |
+| 8​                     | 2                    | C                  |
