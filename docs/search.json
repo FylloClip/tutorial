@@ -1,26 +1,14 @@
 [
   {
-    "objectID": "assembly_instructions.html",
-    "href": "assembly_instructions.html",
-    "title": "assembly instructions",
+    "objectID": "PCBs.html",
+    "href": "PCBs.html",
+    "title": "PCBs",
     "section": "",
-    "text": "Microcontroller board\nThe starting point is the empty PCB.\n \nAdding the LoRa module is the most tricky part, therefore solder it as the first component onto the empty PCB, so that you will not be hindered by the presence of other components​.\nHere a video showing how to solder the LoRa module onto the main PCB: solder RFM95\nNow continue with the remaining components, it doesn’t matter in which order, but it will be easier to add the 10K resistor before adding the socket for the Atmega328.\n  \nNow most of the components have been added… before inserting the Atmega328 chip into the socket, you need to burn the bootloader for the Pro Mini Arduino (8Mhz, 3.3V) onto it.​\nIf you want to monitor the battery voltage, solder a bridge between the two tiny solder plates marked with ‘batt_mon’ (yellow circle in the above pic), this will create a link between battery VCC and an analog pin of the micrcontroller.\nInstead of the male pin header (on the left) you can add a female header, depending on the type of FTDI adapter you will use for programming.​\nThe antenna (top right) is a piece of wire of 8.6 cm length.​\nFylloClip sensor\n \nHere you see the top and bottom side of a FylloClip sensor. The only component which needs to be added is the SFH203P photodiode acting as light sensor​.\n \nThe photodiode has a polarity, so you need to pay attention to its correct placement. In order to place it correctly, make sure that the flat edge of the photodiode coincides with the outline of the photodiode printed on the sensor PCB.\nOn the bottom side of the sensor PCB you see four small solder pads, marked with ‘c’, ‘c’, ‘-’ and ‘+’. Onto these pads you have to solder the end of the wires, which will connect the sensor to the microcontroller board.\nTry to use very thin and lightweight cables of about 1mm outer diameter\n \n  \n\n\n\n​microcontroller board\n​FylloClip sensor no.\nsolder pad marking\n\n\n1​\n1\n+\n\n\n2​\n1\n-\n\n\n3​\n2\n+\n\n\n4​\n2\n-\n\n\n5​\n1\nC\n\n\n6​\n1\nC\n\n\n7​\n2\nC\n\n\n8​\n2\nC",
-    "crumbs": [
-      "Home",
-      "***ASSEMBLY***",
-      "assembly instructions"
-    ]
-  },
-  {
-    "objectID": "list of components.html",
-    "href": "list of components.html",
-    "title": "electronic components",
-    "section": "",
-    "text": "The circuit board is relatively simple and consists of a microcontroller chip, a LoRa radio module and a few additional components.\nThe main parts of the system:\n \nAtmega328P-PU with 8 Mhz crystal and 2 capacitors (22pF)\n \nRFM95w LoRa module\n \nVoltage regulator (boost DC-DC converter)\n\na few resistors, connectors, capacitors,…\n\nBattery holder for 2 AA batteries\nHere a detailed list of all the required electronic components with links to a possible supplyer:\n\n\n\ncomponent​\nlink​\n\n\nphotodiode​\nhttps://www.reichelt.com​\n\n\nmicrocontroller atmega328 with bootloader for Arduino Pro Mini 3.3V​\nhttps://www.reichelt.com (you need to burn the bootloader onto the chip by yourself)​\n\n\nbattery holder​\nhttps://www.reichelt.com​\n\n\nCrystal 8 Mhz​\nhttps://www.reichelt.com​\n\n\nLoRa mosule RFM95w​\nhttps://www.soselectronic.com​\n\n\nSocket for microcontroller​\nhttps://www.reichelt.com​\n\n\nMale header pins ​\nhttps://www.reichelt.com​\n\n\nFemale header pins​\nhttps://www.reichelt.com (only in case you want to use female headers for the serial port)​\n\n\nResistor 4.7K​\nhttps://www.reichelt.com​\n\n\nResistor 10K​\nhttps://www.reichelt.com​\n\n\nCapacitor 100nF​\nhttps://www.reichelt.com​\n\n\nCapacitor 22pF​\nhttps://www.reichelt.com​\n\n\nconnector cable\nhttps://www.reichelt.com\n\n\nStep-up voltage regulator​\nhttps://www.aliexpress.com​",
+    "text": "Here you can download the production files for the PCB needed to create the control unit (Arduino board) as well as the PCBs used as foliar sensors.\nThe files are provided in two different formats, gerber and EasyEDA. The gerber files can be used directly to place an order with a PCB manufacturer, whereas the EasyEDA files can be uploaded to the EasyEDA PCB design software where they can be edited and modified before placing an order.\n\nArduino board\n\n\n\nArduino board PCB\n\n\nGerber format\nEasyEDA format\n\n\nFylloClip sensors\nWhen ordering the foliar sensors, please make sure to select a PCB thickness of 1 mm. If the thickness is more than 1 mm, the sensor will be too stiff an difficult to be placed on a leaf. I have always chosen the white colour, but probably it does not make much of a difference if you choose another colour.\nlarger size:\n\n\n\nfoliar sensor, larger size\n\n\nGerber format\nEasyEDA format\nsmaller size:\n\n\n\nfoliar sensor, smaller size\n\n\nGerber format\nEasyEDA format",
     "crumbs": [
       "Home",
       "***HARDWARE***",
-      "electronic components"
+      "PCBs"
     ]
   },
   {
@@ -43,6 +31,25 @@
     ]
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "assembly_instructions.html",
+    "href": "assembly_instructions.html",
+    "title": "assembly instructions",
+    "section": "",
+    "text": "Microcontroller board\nThe starting point is the empty PCB.\n \nAdding the LoRa module is the most tricky part, therefore solder it as the first component onto the empty PCB, so that you will not be hindered by the presence of other components​.\nHere a video showing how to solder the LoRa module onto the main PCB: solder RFM95\nNow continue with the remaining components, it doesn’t matter in which order, but it will be easier to add the 10K resistor before adding the socket for the Atmega328.\n  \nNow most of the components have been added… before inserting the Atmega328 chip into the socket, you need to burn the bootloader for the Pro Mini Arduino (8Mhz, 3.3V) onto it.​\nIf you want to monitor the battery voltage, solder a bridge between the two tiny solder plates marked with ‘batt_mon’ (yellow circle in the above pic), this will create a link between battery VCC and an analog pin of the micrcontroller.\nInstead of the male pin header (on the left) you can add a female header, depending on the type of FTDI adapter you will use for programming.​\nThe antenna (top right) is a piece of wire of 8.6 cm length.​\nFylloClip sensor\n \nHere you see the top and bottom side of a FylloClip sensor. The only component which needs to be added is the SFH203P photodiode acting as light sensor​.\n \nThe photodiode has a polarity, so you need to pay attention to its correct placement. In order to place it correctly, make sure that the flat edge of the photodiode coincides with the outline of the photodiode printed on the sensor PCB.\nOn the bottom side of the sensor PCB you see four small solder pads, marked with ‘c’, ‘c’, ‘-’ and ‘+’. Onto these pads you have to solder the end of the wires, which will connect the sensor to the microcontroller board.\nTry to use very thin and lightweight cables of about 1mm outer diameter. At the end put some nail polish on the soldered contacts, around the base of the photodiode and on both sides of the vias (tiny holes where copper traces pass from one side of the PCB to the other).\n\n\n\nwiring of the foliar sensors to the microcontroller board\n\n\nThis is the final result:\n \nThe red arrows indicate the places where to apply nail polish as a protective coating to prevent moisture from getting on the circuit.\nWiring of the battery:\n\nThe final result:",
+    "crumbs": [
+      "Home",
+      "***ASSEMBLY***",
+      "assembly instructions"
+    ]
+  },
+  {
     "objectID": "device_registration.html",
     "href": "device_registration.html",
     "title": "device registration on TTN",
@@ -55,22 +62,15 @@
     ]
   },
   {
-    "objectID": "PCBs.html",
-    "href": "PCBs.html",
-    "title": "PCBs",
+    "objectID": "list of components.html",
+    "href": "list of components.html",
+    "title": "electronic components",
     "section": "",
-    "text": "Here you can download the production files for the PCB needed to create the control unit (Arduino board) as well as the PCBs used as foliar sensors.\nThe files are provided in two different formats, gerber and EasyEDA. The gerber files can be used directly to place an order with a PCB manufacturer, whereas the EasyEDA files can be uploaded to the EasyEDA PCB design software where they can be edited and modified before placing an order.\n\nArduino board\n\n\n\nArduino board PCB\n\n\nGerber format\nEasyEDA format\n\n\nFylloClip sensors\nWhen ordering the foliar sensors, please make sure to select a PCB thickness of 1 mm. If the thickness is more than 1 mm, the sensor will be too stiff an difficult to be placed on a leaf. I have always chosen the white colour, but probably it does not make much of a difference if you choose another colour.\nlarger size:\n\n\n\nfoliar sensor, larger size\n\n\nGerber format\nEasyEDA format\nsmaller size:\n\n\n\nfoliar sensor, smaller size\n\n\nGerber format\nEasyEDA format",
+    "text": "The circuit board is relatively simple and consists of a microcontroller chip, a LoRa radio module and a few additional components.\nThe main parts of the system:\n \nAtmega328P-PU with 8 Mhz crystal and 2 capacitors (22pF)\n \nRFM95w LoRa module\n \nVoltage regulator (boost DC-DC converter)\n\na few resistors, connectors, capacitors,…\n\nBattery holder for 2 AA batteries\nHere a detailed list of all the required electronic components with links to a possible supplyer:\n\n\n\ncomponent​\nlink​\n\n\nphotodiode​\nhttps://www.reichelt.com​\n\n\nmicrocontroller atmega328 with bootloader for Arduino Pro Mini 3.3V​\nhttps://www.reichelt.com (you need to burn the bootloader onto the chip by yourself)​\n\n\nbattery holder​\nhttps://www.reichelt.com​\n\n\nCrystal 8 Mhz​\nhttps://www.reichelt.com​\n\n\nLoRa mosule RFM95w​\nhttps://www.soselectronic.com​\n\n\nSocket for microcontroller​\nhttps://www.reichelt.com​\n\n\nMale header pins ​\nhttps://www.reichelt.com​\n\n\nFemale header pins​\nhttps://www.reichelt.com (only in case you want to use female headers for the serial port)​\n\n\nResistor 4.7K​\nhttps://www.reichelt.com​\n\n\nResistor 10K​\nhttps://www.reichelt.com​\n\n\nCapacitor 100nF​\nhttps://www.reichelt.com​\n\n\nCapacitor 22pF​\nhttps://www.reichelt.com​\n\n\nconnector cable\nhttps://www.reichelt.com\n\n\nStep-up voltage regulator​\nhttps://www.aliexpress.com​",
     "crumbs": [
       "Home",
       "***HARDWARE***",
-      "PCBs"
+      "electronic components"
     ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   }
 ]
