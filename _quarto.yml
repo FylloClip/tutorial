@@ -33,7 +33,7 @@ website:
       - section: "***DEPLOYING THE DEVICE***"
         contents:
           - testing the device
-          - attaching the sensor to a leaf
+          - attaching_the_sensor.qmd
           - data interpretation
       - outlook
 

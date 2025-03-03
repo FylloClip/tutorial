@@ -34,23 +34,23 @@ Here you see the top and bottom side of a FylloClip sensor. The only component w
 
 The photodiode has a polarity, so you need to pay attention to its correct placement. In order to place it correctly, make sure that the flat edge of the photodiode coincides with the outline of the photodiode printed on the sensor PCB.
 
-On the bottom side of the sensor PCB you see four small solder pads, marked with 'c', 'c', '-' and '+'. Onto these pads you have to solder the end of the wires, which will connect the sensor to the microcontroller board.
+On the bottom side of the sensor PCB you see four small solder pads, marked with 'c', 'c', '-' and '+'. Onto these pads you have to solder the end of the cables, which will connect the sensor to the microcontroller board. Connect the cables so that they point towards the centre of the sensor plate (see images below), this will allow you later to attach the sensors to the leaf with the cables not protruding from the side of the leaf but to run straight under the leaf towards the petiole where they can be fixed (see paragraph 'attaching the sensor to a leaf').
 
 Try to use very thin and lightweight cables of about 1mm outer diameter. At the end put some nail polish on the soldered contacts, around the base of the photodiode and on both sides of the vias (tiny holes where copper traces pass from one side of the PCB to the other).
-
-![wiring of the foliar sensors to the microcontroller board](images/clipboard-3797534038.png){width="600"}
-
-This is the final result:
 
  ![](images/clipboard-1135464956.png){width="500"}
 
 The red arrows indicate the places where to apply nail polish as a protective coating to prevent moisture from getting on the circuit.
 
-Wiring of the battery:
+![](images/clipboard-3797534038.png){alt="wiring of the foliar sensors to the microcontroller board" width="600"}
+
+Wiring of the sensors to the micrcontroller board
+
+**Wiring of the battery:**
 
 ![](images/clipboard-2548362301.png){width="500"}
 
-The final result:
+**The final result:**
 
 ![](images/clipboard-4003555692.png){width="500"}
 
