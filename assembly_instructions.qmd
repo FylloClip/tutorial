@@ -46,6 +46,8 @@ The red arrows indicate the places where to apply nail polish as a protective co
 
 Wiring of the sensors to the micrcontroller board
 
+Once you have soldered the cables to the foliar sensor and applied the polish, you can further fix the cables by adding a small cable tie passing it through the two small holes on the sensor.
+
 **Wiring of the battery:**
 
 ![](images/clipboard-2548362301.png){width="500"}
