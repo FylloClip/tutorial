@@ -2,7 +2,7 @@
 title: "burning the bootloader"
 ---
 
-The bootloader is a small program which need to be present on a microcontroller chip to be used in the Arduino environment. The bootloader enables the chip to receive code via the USB connection (using the Arduino IDE).
+The bootloader is a small program that must be present on a microcontroller in order to be used in the Arduino environment. The bootloader enables the chip to receive code via the USB connection (using the Arduino IDE).
 
 If you buy an ATmega chip from a supplier of electronic components, most likely it will come without the bootloader. Here you find the instructions on how to upload ('burn') a bootloader with the settings required for our particular purpose on a ATmega328P chip.
 
@@ -10,7 +10,7 @@ There are various possible ways to burn a bootloader, the easiest approach is to
 
 ![](images/clipboard-1379786848.png){width="400"}
 
-The above picture explains the setup with two Arduino Uno boards, one is used as programmer, the other as target, which is to say as the board which holds the virgin ATmega chip which needs to get the bootloader. The programmer board will be connected to the PC via the USB cable, the target board will only be connected to the programmer board by 6 jumper wires as shown in the picture.
+The above picture explains the setup with two Arduino Uno boards, one is used as programmer, the other as target. The target is the board which holds the virgin ATmega chip which needs to receive the bootloader. The programmer board will be connected to the PC via the USB cable, the target board will only be connected to the programmer board by 6 jumper wires as shown in the picture above.
 
 As the first step, the sketch 'ArduinoISP' needs to be uploaded onto the 'programmer' Arduino board.
 
@@ -32,11 +32,11 @@ Next, select 'Arduino as ISP' as the type of programmer:
 
 ![](images/clipboard-2017319832.png){width="400"}
 
-With these settings, we can now activate the command to burn the bootloader onto the target chip:
+With these settings, activate the command to burn the bootloader onto the target chip:
 
 ![](images/clipboard-2460124254.png){width="400"}
 
-If nothing goes wrong, now the bootloader should be transferred onto the target chip. With this setup, however, this process frequently fails due to the not perfectly stable connections with the jumper wires.
+If nothing goes wrong, the bootloader should now be transferred onto the target chip. With this setup, however, this process frequently fails due to the not perfectly stable connections with the jumper wires.
 
 In order to avoid such problems, you can assemble a special programming board:
 
