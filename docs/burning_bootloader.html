@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>device registration on TTN – FylloClip tutorial</title>
+<title>burning the bootloader – FylloClip tutorial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./code for Arduino.html"><strong><em>SOFTWARE</em></strong></a></li><li class="breadcrumb-item"><a href="./device_registration.html">device registration on TTN</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./PCBs.html"><strong><em>HARDWARE</em></strong></a></li><li class="breadcrumb-item"><a href="./burning_bootloader.html">burning the bootloader</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -151,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./burning_bootloader.html" class="sidebar-item-text sidebar-link">
+  <a href="./burning_bootloader.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">burning the bootloader</span></a>
   </div>
 </li>
@@ -191,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./device_registration.html" class="sidebar-item-text sidebar-link active">
+  <a href="./device_registration.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">device registration on TTN</span></a>
   </div>
 </li>
@@ -237,9 +237,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./code for Arduino.html"><strong><em>SOFTWARE</em></strong></a></li><li class="breadcrumb-item"><a href="./device_registration.html">device registration on TTN</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./PCBs.html"><strong><em>HARDWARE</em></strong></a></li><li class="breadcrumb-item"><a href="./burning_bootloader.html">burning the bootloader</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">device registration on TTN</h1>
+<h1 class="title">burning the bootloader</h1>
 </div>
 
 
@@ -256,37 +256,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Each device needs to be registered on the ‘The Things Network’ platform (TTN) for becoming fully operational.</p>
-<p>First, create a free account on The Things Network: <a href="https://www.thethingsnetwork.org/get-started" class="uri">https://www.thethingsnetwork.org/get-started</a></p>
-<p><img src="images/clipboard-3534874080.png" class="img-fluid" width="500"></p>
-<p>Once you have created your account, you need to create a so called ‘application’, which can be considered as a collection of end devices to be handled in a similar manner, concerning structure and transmission of their data.</p>
-<p><img src="images/clipboard-93905321.png" class="img-fluid" width="650"></p>
-<p><img src="images/clipboard-843987135.png" class="img-fluid" width="650"></p>
-<p>Next, you can start with the registration of end devices (each FylloClip module would be a single new end device)</p>
-<p><img src="images/clipboard-3758552285.png" class="img-fluid" width="650"></p>
-<p>Follow the settings in the subsequent screenshots (if you’re located outside of Europe select the frequency plan applicable to your region).</p>
-<p><img src="images/clipboard-488402867.png" class="img-fluid" width="550"></p>
-<p>next, select ABP and generate the DevEUI and the various keys:</p>
-<p><img src="images/clipboard-4107351814.png" class="img-fluid"></p>
-<p>After registration we have to edit the newly created device to add a few further and to copy the keys we need to insert into the Arduino sketch</p>
-<p><img src="images/clipboard-3783806657.png" class="img-fluid" width="600"></p>
-<p>Scroll down and expand the Network layer settings</p>
-<p><img src="images/clipboard-2029578782.png" class="img-fluid"></p>
-<p>Scroll down and open the advanced MAC settings</p>
-<p><img src="images/clipboard-1721138275.png" class="img-fluid" width="550"></p>
-<p>Click 9 times on the ‘add frequency’ button to add 9 empty fields</p>
-<p><img src="images/clipboard-3349742066.png" class="img-fluid"></p>
-<p>In those fields insert the following frequencies, this example reports the frequencies used for Europe (868 MHz frequency band), which are 868100000, 868300000, 868500000, 867100000, 867300000, 867500000, 867700000, 867900000, 868800000. Add the end save the changes.</p>
-<p><img src="images/clipboard-3505957760.png" class="img-fluid"></p>
-<p>Now we retrieve the keys to be inserted into the Arduino sketch. Return to ‘Device overview’</p>
-<p><img src="images/clipboard-399796964.png" class="img-fluid"></p>
-<p>Make NwkSKey and AppSKey visible</p>
-<p><img src="images/clipboard-794427737.png" class="img-fluid"></p>
-<p>Move the cursor to the right side of the key fields to activate the formatting options, the change the format as follows. At the end copy each key using the copy function and insert them in the respective positions of the <a href="https://github.com/FylloClip/tutorial/blob/main/ressources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino">Arduino sketch</a>.</p>
-<p><img src="images/clipboard-1854050922.png" class="img-fluid"></p>
-<p><img src="images/clipboard-1614228506.png" class="img-fluid"></p>
-<p><img src="images/clipboard-1320572242.png" class="img-fluid"></p>
-<p>You can also specify a unique ID number for your device (line 12 of the code), which may be helpful for later data handling. At this point the sketch id ready for the upload onto your device.</p>
+<p>The bootloader is a small program which need to be present on a microcontroller chip to be used in the Arduino environment. The bootloader enables the chip to receive code via the USB connection (using the Arduino IDE).</p>
+<p>If you buy an ATmega chip from a supplier of electronic components, most likely it will come without the bootloader. Here you find the instructions on how to upload (‘burn’) a bootloader with the settings required for our particular purpose on a ATmega328P chip.</p>
+<p>There are various possible ways to burn a bootloader, the easiest approach is to use another Arduino as the programming device for the new chip. For more details, see <a href="https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP/" class="uri">https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP/</a></p>
+<p><img src="images/clipboard-1379786848.png" class="img-fluid" width="400"></p>
+<p>The above picture explains the setup with two Arduino Uno boards, one is used as programmer, the other as target, which is to say as the board which holds the virgin ATmega chip which needs to get the bootloader. The programmer board will be connected to the PC via the USB cable, the target board will only be connected to the programmer board by 6 jumper wires as shown in the picture.</p>
+<p>As the first step, the sketch ‘ArduinoISP’ needs to be uploaded onto the ‘programmer’ Arduino board.</p>
+<p><img src="images/clipboard-1501411117.png" class="img-fluid" width="400"></p>
+<p>For this step, the selected type of board in the Arduino IDE must be ‘Arduino UNO’</p>
+<p><img src="images/clipboard-1059456764.png" class="img-fluid" width="300"></p>
+<p>After uploading this sketch onto the programmer board, change the selection to ‘Arduino Pro or Pro Mini’ :</p>
+<p><img src="images/clipboard-1994552068.png" class="img-fluid" width="300"></p>
+<p>In addition, select the option ‘ATmega328 (3.3V 8MHz)’ under Tools&gt;Processor</p>
+<p><img src="images/clipboard-3814691220.png" class="img-fluid" width="400"></p>
+<p>Next, select ‘Arduino as ISP’ as the type of programmer:</p>
+<p><img src="images/clipboard-2017319832.png" class="img-fluid" width="400"></p>
+<p>With these settings, we can now activate the command to burn the bootloader onto the target chip:</p>
+<p><img src="images/clipboard-2460124254.png" class="img-fluid" width="400"></p>
+<p>If nothing goes wrong, now the bootloader should be transferred onto the target chip. With this setup, however, this process frequently fails due to the not perfectly stable connections with the jumper wires.</p>
+<p>In order to avoid such problems, you can assemble a special programming board:</p>
+<p>The design for this PCB can be downloaded here. In addition you need two 28-pin sockets, two 16 MHz crystals, four 22pF capacitors and a 6-pin header pin. The process of burning a bootloader will be exactly the same as described above. Of course you will need a ATmega328 chip with Arduino Uno bootloader already present to start with.</p>
 
 
 

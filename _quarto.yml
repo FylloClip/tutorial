@@ -22,6 +22,7 @@ website:
         contents:
           - PCBs.qmd
           - list of components.qmd
+          - burning_bootloader.qmd
       - section: "***ASSEMBLY***"
         contents:
           - assembly_instructions.qmd
