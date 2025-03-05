@@ -42,11 +42,13 @@ Try to use very thin and lightweight cables of about 1mm outer diameter. At the 
 
 The red arrows indicate the places where to apply nail polish as a protective coating to prevent moisture from getting on the circuit.
 
-![](images/clipboard-3797534038.png){alt="wiring of the foliar sensors to the microcontroller board" width="600"}
-
-Wiring of the sensors to the micrcontroller board
-
 Once you have soldered the cables to the foliar sensor and applied the polish, you can further fix the cables by adding a small cable tie passing through the two small holes on the sensor.
+
+![](images/clipboard-774725458.png){width="300"}
+
+**Wiring of the sensors to the micrcontroller board:**
+
+![](images/clipboard-3797534038.png){alt="wiring of the foliar sensors to the microcontroller board" width="600"}
 
 **Wiring of the battery:**
 
