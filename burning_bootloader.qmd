@@ -32,14 +32,14 @@ Next, select 'Arduino as ISP' as the type of programmer:
 
 ![](images/clipboard-2017319832.png){width="400"}
 
-With these settings, activate the command to burn the bootloader onto the target chip:
+With these settings, give the command to burn the bootloader onto the target chip:
 
 ![](images/clipboard-2460124254.png){width="400"}
 
-If nothing goes wrong, the bootloader should now be transferred onto the target chip. With this setup, however, this process frequently fails due to the not perfectly stable connections with the jumper wires.
+If nothing goes wrong, the bootloader should now be transferred onto the target chip. With such a setup, however, this process frequently fails since jumper wires often don't provide a perfectly stable connection.
 
 In order to avoid such problems, you can assemble a special programming board:
 
 ![](images/clipboard-970843184.png){width="400"}
 
-The design for this PCB can be downloaded here. In addition to the PCB you need two 28-pin sockets, two 10K resistors, two 16 MHz crystals, four 22pF capacitors and a 6-pin header pin. The process of burning a bootloader will be exactly the same as described above. Of course you will need a ATmega328 chip with Arduino Uno bootloader already present to start with.
+The design for this PCB can be downloaded [here](https://github.com/FylloClip/tutorial/blob/main/ressources/PCB%20production%20files/Bootloader/Gerber_bootloader.zip). In addition to the PCB you need two 28-pin sockets, two 10K resistors, two 16 MHz crystals, four 22pF capacitors and a 6-pin header pin. The process of burning a bootloader will be exactly the same as described above. Of course you will need a ATmega328 chip with Arduino Uno bootloader already present to start with.
