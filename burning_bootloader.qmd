@@ -40,4 +40,6 @@ If nothing goes wrong, the bootloader should now be transferred onto the target 
 
 In order to avoid such problems, you can assemble a special programming board:
 
-The design for this PCB can be downloaded here. In addition you need two 28-pin sockets, two 16 MHz crystals, four 22pF capacitors and a 6-pin header pin. The process of burning a bootloader will be exactly the same as described above. Of course you will need a ATmega328 chip with Arduino Uno bootloader already present to start with.
+![](images/clipboard-970843184.png){width="400"}
+
+The design for this PCB can be downloaded here. In addition to the PCB you need two 28-pin sockets, two 10K resistors, two 16 MHz crystals, four 22pF capacitors and a 6-pin header pin. The process of burning a bootloader will be exactly the same as described above. Of course you will need a ATmega328 chip with Arduino Uno bootloader already present to start with.
