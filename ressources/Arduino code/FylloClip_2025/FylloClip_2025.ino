@@ -324,6 +324,7 @@ void measure_light() {
   }
 
   L1 = L1 / 10;  //mean value
+  L1=L1*0.09765625; // transform to %VCC: (analog_value/1024)*100
 
   //photodiode_2
   pinMode(RAD_2, OUTPUT);    //connect GND
@@ -334,6 +335,7 @@ void measure_light() {
     delay(10);
   }
   L2 = L2 / 10;  //mean value
+  L2=L2*0.09765625; // transform to %VCC: (analog_value/1024)*100
 }
 
 void get_capacitance() {
