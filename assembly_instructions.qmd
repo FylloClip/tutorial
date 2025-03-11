@@ -44,7 +44,9 @@ The red arrows indicate the places where to apply nail polish as a protective co
 
 Once you have soldered the cables to the foliar sensor and applied the polish, you can further fix the cables by adding a small cable tie passing through the two small holes on the sensor.
 
-![](images/clipboard-774725458.png){width="300"}
+**Important note:** the new foliar sensors should be gently washed with soap or dish soap because it seems that some residue of the production process hinders the condensation of water vapour on their surface. Experience shows that after washing the sensitivity of the sensors greatly improves.
+
+![*Fully completed foliar sensor*](images/clipboard-774725458.png){width="300"}
 
 **Wiring of the sensors to the micrcontroller board:**
 
