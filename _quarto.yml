@@ -30,7 +30,7 @@ website:
         contents:
           - code for Arduino.qmd
           - device_registration.qmd
-          - get the data to a database
+          - cloud.qmd
       - section: "***DEPLOYING THE DEVICE***"
         contents:
           - testing the device
