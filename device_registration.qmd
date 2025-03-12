@@ -14,6 +14,39 @@ Once you have created your account, you need to create a so called 'application'
 
 ![](images/clipboard-843987135.png){width="650"}
 
+After having created the application we should specify some settings necessary for the later data handling. One thing to do is the insert a payload formatter, i.e. a code which will transform the incoming data into form suitable for our needs.
+
+To achieve this, select Payload formatters –\> Uplink and then *Custom Javascript formatter* as formatter type. In the field *Formatter code* paste the follwing code:
+
+```         
+function Decoder(bytes, port) {
+
+  return {
+    
+  //Sensor ID
+  Z: (bytes[0]),
+  
+  //light 1
+  A: ((bytes[2] << 8) | bytes[1]),
+  
+  //light 2
+  B: ((bytes[4] << 8) | bytes[3]),
+  
+  //capacitance 1
+  C: (bytes[5]),
+  
+  //capacitance 2
+  D: (bytes[6]),
+  
+  //Battery voltage
+  //round to 2 decimal places
+  E:+((((bytes[8] << 8) | bytes[7]))*3.3/1023).toFixed(2)
+  }
+}
+```
+
+![](images/clipboard-3102897427.png){width="500"}
+
 Next, you can start with the registration of end devices (each FylloClip module would be a single new end device)
 
 ![](images/clipboard-3758552285.png){width="650"}

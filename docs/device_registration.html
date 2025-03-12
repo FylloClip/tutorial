@@ -196,8 +196,11 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
           <li class="sidebar-item">
- <span class="menu-text">get the data to a database</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./cloud.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Storing the data in the cloud</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -262,6 +265,33 @@ ul.task-list li input[type="checkbox"] {
 <p>Once you have created your account, you need to create a so called ‘application’, which can be considered as a collection of end devices to be handled in a similar manner, concerning structure and transmission of their data.</p>
 <p><img src="images/clipboard-93905321.png" class="img-fluid" width="650"></p>
 <p><img src="images/clipboard-843987135.png" class="img-fluid" width="650"></p>
+<p>After having created the application we should specify some settings necessary for the later data handling. One thing to do is the insert a payload formatter, i.e.&nbsp;a code which will transform the incoming data into form suitable for our needs.</p>
+<p>To achieve this, select Payload formatters –&gt; Uplink and then <em>Custom Javascript formatter</em> as formatter type. In the field <em>Formatter code</em> paste the follwing code:</p>
+<pre><code>function Decoder(bytes, port) {
+
+  return {
+    
+  //Sensor ID
+  Z: (bytes[0]),
+  
+  //light 1
+  A: ((bytes[2] &lt;&lt; 8) | bytes[1]),
+  
+  //light 2
+  B: ((bytes[4] &lt;&lt; 8) | bytes[3]),
+  
+  //capacitance 1
+  C: (bytes[5]),
+  
+  //capacitance 2
+  D: (bytes[6]),
+  
+  //Battery voltage
+  //round to 2 decimal places
+  E:+((((bytes[8] &lt;&lt; 8) | bytes[7]))*3.3/1023).toFixed(2)
+  }
+}</code></pre>
+<p><img src="images/clipboard-3102897427.png" class="img-fluid" width="500"></p>
 <p>Next, you can start with the registration of end devices (each FylloClip module would be a single new end device)</p>
 <p><img src="images/clipboard-3758552285.png" class="img-fluid" width="650"></p>
 <p>Follow the settings in the subsequent screenshots (if you’re located outside of Europe select the frequency plan applicable to your region).</p>
