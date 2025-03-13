@@ -12,12 +12,38 @@ As the first step, you need to create your own [(free) account](https://en.alter
 
 Type in the desired name of your website and see if it is available. Follow the procedure for registration and after receiving a confirmation e-mail you will be the proud owner of the new website.
 
-![](images/clipboard-2789207297.png){width="500"}
+![](images/clipboard-1928890711.png){width="500"}
 
 Once the website is created, two further steps are needed, namely to set up the database and to add a script which will accept the data-packets coming in from the TTN network server and insert the data into the database.
 
 Let's first set up the database:
 
-Inside this database we need to create tables which will finally store the data. If you have several FylloClip modules, you will need a separate table for each one. You may remember that inside the Arduino code, which was uploaded to the microcontroller board, we specified the variable *ID* and assigned a value to this variable. Suppose this is your first module to which you assigned ID=1. The data of this module will end up in the table with the name tbl_1. But we have to create this table first.
+![](images/clipboard-1420886761.png){width="500"}
 
-The easiest way to achieve this...
+![](images/clipboard-764368489.png){width="500"}
+
+Once created the database access the PhpMyAdmin area. If you want, you can also activate the https protocol.
+
+![](images/clipboard-1168296288.png){width="500"}
+
+Within PhpMyAdmin we can now manage the database. Inside this database we need to create tables which will finally store the data. If you have several FylloClip modules, you will need a separate table for each one. You may remember that inside the Arduino code, which was uploaded to the microcontroller board, we specified the variable *ID* and assigned a value to this variable. Suppose this is your first module to which you assigned ID=1. The data of this module will end up in the table with the name tbl_1. But we have to create this table first.
+
+The easiest way to achieve this is to access the SQL register and insert there the following code:
+
+```         
+CREATE TABLE `tbl_1` ( 
+  `ID` int PRIMARY KEY,  
+  `Server_Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+  `A` int NOT NULL COMMENT 'L1', 
+  `B` int NOT NULL COMMENT 'L2', 
+  `C` int NOT NULL COMMENT 'C1', 
+  `D` int NOT NULL COMMENT 'C2', 
+  `E` float NOT NULL COMMENT 'Battery' 
+) ENGINE=MyISAM DEFAULT CHARSET=latin1; 
+```
+
+![](images/clipboard-436791430.png)
+
+![](images/clipboard-1142989514.png){width="500"}
+
+![](images/clipboard-2985810636.png){width="500"}

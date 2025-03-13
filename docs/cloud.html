@@ -261,6 +261,30 @@ ul.task-list li input[type="checkbox"] {
 
 <p>In the paragraph <a href="https://fylloclip.github.io/tutorial/device_registration.html"><em>device registration on TTN</em></a>we have seen how an end device (FylloClip module) is registered on the TTN network. With this we enabled the data flow from the device in the field to the TTN network server, provided of course that there is TTN coverage at the site, which means that there needs to be a LoRa-gateway connected to TTN somewhere in the area. On <a href="https://ttnmapper.org/">TTNmapper</a> you can find out if there is already TTN coverage in a specific location. If not, you will need to install your own LoRa gateway and register it on TTN.</p>
 <p>As already mentioned in <a href="https://fylloclip.github.io/tutorial/device_registration.html"><em>device registration on TTN</em></a>, the TTN network server cannot be used for storing data. But we can provide instructions for the data to be forwarded to another destination in the cloud where the data can b stored in a database. There are various approaches to achieve this goal, what is explained here is just one of them and consists in forwarding the data, which have already been formatted to a JSON object (according to the <em>payload formatter</em> inserted when creating the <em>application</em> on TTN), to another website which provides a hosting service. There are many free web hosting services out there, for this tutorial we use <a href="https://en.altervista.org/">altervista.org</a>.</p>
+<p>As the first step, you need to create your own <a href="https://en.altervista.org/create-free-site.php">(free) account</a>. Choose the option <em>Hosting with file manager</em>. Although there appears a monthly cost, there will be the option for a free account at the next step.</p>
+<p><img src="images/clipboard-1445895787.png" class="img-fluid" width="500"></p>
+<p>Type in the desired name of your website and see if it is available. Follow the procedure for registration and after receiving a confirmation e-mail you will be the proud owner of the new website.</p>
+<p><img src="images/clipboard-1928890711.png" class="img-fluid" width="500"></p>
+<p>Once the website is created, two further steps are needed, namely to set up the database and to add a script which will accept the data-packets coming in from the TTN network server and insert the data into the database.</p>
+<p>Let’s first set up the database:</p>
+<p><img src="images/clipboard-1420886761.png" class="img-fluid" width="500"></p>
+<p><img src="images/clipboard-764368489.png" class="img-fluid" width="500"></p>
+<p>Once created the database access the PhpMyAdmin area. If you want, you can also activate the https protocol.</p>
+<p><img src="images/clipboard-1168296288.png" class="img-fluid" width="500"></p>
+<p>Within PhpMyAdmin we can now manage the database. Inside this database we need to create tables which will finally store the data. If you have several FylloClip modules, you will need a separate table for each one. You may remember that inside the Arduino code, which was uploaded to the microcontroller board, we specified the variable <em>ID</em> and assigned a value to this variable. Suppose this is your first module to which you assigned ID=1. The data of this module will end up in the table with the name tbl_1. But we have to create this table first.</p>
+<p>The easiest way to achieve this is to access the SQL register and insert there the following code:</p>
+<pre><code>CREATE TABLE `tbl_1` ( 
+  `ID` int PRIMARY KEY,  
+  `Server_Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+  `A` int NOT NULL COMMENT 'L1', 
+  `B` int NOT NULL COMMENT 'L2', 
+  `C` int NOT NULL COMMENT 'C1', 
+  `D` int NOT NULL COMMENT 'C2', 
+  `E` float NOT NULL COMMENT 'Battery' 
+) ENGINE=MyISAM DEFAULT CHARSET=latin1; </code></pre>
+<p><img src="images/clipboard-436791430.png" class="img-fluid"></p>
+<p><img src="images/clipboard-1142989514.png" class="img-fluid" width="500"></p>
+<p><img src="images/clipboard-2985810636.png" class="img-fluid" width="500"></p>
 
 
 
