@@ -14,9 +14,11 @@ Once you have created your account, you need to create a so called 'application'
 
 ![](images/clipboard-843987135.png){width="650"}
 
-After having created the application we should specify some settings necessary for the later data handling. One thing to do is the insert a payload formatter, i.e. a code which will transform the incoming data into form suitable for our needs.
+After having created the application we should specify some settings necessary for the later data handling. One thing to do is the insert a payload formatter, i.e. a code which will transform the incoming data into form suitable for your planned data flow.
 
-To achieve this, select Payload formatters –\> Uplink and then *Custom Javascript formatter* as formatter type. In the field *Formatter code* paste the follwing code:
+The data flow and management proposed in this tutorial is only one of many possible options. Here, we will decode the incoming data packet and transform it to a JSON object containing 5 variables named Z, A, B, C, D and E. Z will hold the ID number of the device, A the light measurement of sensor 1, B the light measurement of sensor 2, C the capacitance value of sensor 1, D the capacitance value of sensor 2 and E the battery voltage.
+
+To enter the payload formatter for the application, select Payload formatters –\> Uplink and then *Custom Javascript formatter* as formatter type. In the field *Formatter code* paste the follwing code:
 
 ```         
 function Decoder(bytes, port) {
@@ -46,6 +48,10 @@ function Decoder(bytes, port) {
 ```
 
 ![](images/clipboard-3102897427.png){width="500"}
+
+Having inserted the payload formatter at the application level, it will be automatically applied to all end devices which will be created within this application. Alternatively, it is also possible to specifiy a payload formatter individually for a single end device.
+
+Another important setting at the application level is to specifiy, what the TTN network server should do with the decoded data packets. Data cannot be permanently stored on TTN, therefore they need to be forwarded to some other storage place on the cloud. Again, there are many possible options for this to be achieved, The settings necessary for the solution proposed here are explained more in detail in the paragraph [*storing the data in the cloud*](https://fylloclip.github.io/tutorial/cloud.html).
 
 Next, you can start with the registration of end devices (each FylloClip module would be a single new end device)
 

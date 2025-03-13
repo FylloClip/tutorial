@@ -198,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cloud.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Storing the data in the cloud</span></a>
+ <span class="menu-text">storing the data in the cloud</span></a>
   </div>
 </li>
       </ul>
@@ -265,8 +265,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Once you have created your account, you need to create a so called ‘application’, which can be considered as a collection of end devices to be handled in a similar manner, concerning structure and transmission of their data.</p>
 <p><img src="images/clipboard-93905321.png" class="img-fluid" width="650"></p>
 <p><img src="images/clipboard-843987135.png" class="img-fluid" width="650"></p>
-<p>After having created the application we should specify some settings necessary for the later data handling. One thing to do is the insert a payload formatter, i.e.&nbsp;a code which will transform the incoming data into form suitable for our needs.</p>
-<p>To achieve this, select Payload formatters –&gt; Uplink and then <em>Custom Javascript formatter</em> as formatter type. In the field <em>Formatter code</em> paste the follwing code:</p>
+<p>After having created the application we should specify some settings necessary for the later data handling. One thing to do is the insert a payload formatter, i.e.&nbsp;a code which will transform the incoming data into form suitable for your planned data flow.</p>
+<p>The data flow and management proposed in this tutorial is only one of many possible options. Here, we will decode the incoming data packet and transform it to a JSON object containing 5 variables named Z, A, B, C, D and E. Z will hold the ID number of the device, A the light measurement of sensor 1, B the light measurement of sensor 2, C the capacitance value of sensor 1, D the capacitance value of sensor 2 and E the battery voltage.</p>
+<p>To enter the payload formatter for the application, select Payload formatters –&gt; Uplink and then <em>Custom Javascript formatter</em> as formatter type. In the field <em>Formatter code</em> paste the follwing code:</p>
 <pre><code>function Decoder(bytes, port) {
 
   return {
@@ -292,6 +293,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</code></pre>
 <p><img src="images/clipboard-3102897427.png" class="img-fluid" width="500"></p>
+<p>Having inserted the payload formatter at the application level, it will be automatically applied to all end devices which will be created within this application. Alternatively, it is also possible to specifiy a payload formatter individually for a single end device.</p>
+<p>Another important setting at the application level is to specifiy, what the TTN network server should do with the decoded data packets. Data cannot be permanently stored on TTN, therefore they need to be forwarded to some other storage place on the cloud. Again, there are many possible options for this to be achieved, The settings necessary for the solution proposed here are explained more in detail in the paragraph <a href="https://fylloclip.github.io/tutorial/cloud.html"><em>storing the data in the cloud</em></a>.</p>
 <p>Next, you can start with the registration of end devices (each FylloClip module would be a single new end device)</p>
 <p><img src="images/clipboard-3758552285.png" class="img-fluid" width="650"></p>
 <p>Follow the settings in the subsequent screenshots (if you’re located outside of Europe select the frequency plan applicable to your region).</p>
