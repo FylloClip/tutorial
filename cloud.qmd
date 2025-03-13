@@ -17,3 +17,7 @@ Type in the desired name of your website and see if it is available. Follow the 
 Once the website is created, two further steps are needed, namely to set up the database and to add a script which will accept the data-packets coming in from the TTN network server and insert the data into the database.
 
 Let's first set up the database:
+
+Inside this database we need to create tables which will finally store the data. If you have several FylloClip modules, you will need a separate table for each one. You may remember that inside the Arduino code, which was uploaded to the microcontroller board, we specified the variable *ID* and assigned a value to this variable. Suppose this is your first module to which you assigned ID=1. The data of this module will end up in the table with the name tbl_1. But we have to create this table first.
+
+The easiest way to achieve this...
