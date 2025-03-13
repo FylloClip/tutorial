@@ -30,7 +30,7 @@ Within PhpMyAdmin we can now manage the database. Inside this database we need t
 
 The easiest way to achieve this is to access the SQL register and insert there the following code:
 
-```         
+```{verbatim}
 CREATE TABLE `tbl_1` ( 
   `ID` int PRIMARY KEY,  
   `Server_Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, 
