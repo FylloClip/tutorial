@@ -6,10 +6,14 @@ In the paragraph [*device registration on TTN*](https://fylloclip.github.io/tuto
 
 As already mentioned in [*device registration on TTN*](https://fylloclip.github.io/tutorial/device_registration.html), the TTN network server cannot be used for storing data. But we can provide instructions for the data to be forwarded to another destination in the cloud where the data can b stored in a database. There are various approaches to achieve this goal, what is explained here is just one of them and consists in forwarding the data, which have already been formatted to a JSON object (according to the *payload formatter* inserted when creating the *application* on TTN), to another website which provides a hosting service. There are many free web hosting services out there, for this tutorial we use [altervista.org](https://en.altervista.org/).
 
-As the first step, you need to create your own (free) account [there](https://en.altervista.org/create-free-site.php). Choose the option *Hosting with file manager*. Although there appears a monthly cost, there will be the option for a free account at the next step.
+As the first step, you need to create your own [(free) account](https://en.altervista.org/create-free-site.php). Choose the option *Hosting with file manager*. Although there appears a monthly cost, there will be the option for a free account at the next step.
 
 ![](images/clipboard-1445895787.png){width="500"}
 
-At the next step...
+Type in the desired name of your website and see if it is available. Follow the procedure for registration and after receiving a confirmation e-mail you will be the proud owner of the new website.
 
 ![](images/clipboard-2789207297.png){width="500"}
+
+Once the website is created, two further steps are needed, namely to set up the database and to add a script which will accept the data-packets coming in from the TTN network server and insert the data into the database.
+
+Let's first set up the database:
