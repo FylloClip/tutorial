@@ -1,5 +1,8 @@
 ---
 title: "storing the data in the cloud"
+format: 
+  html:
+    code-tools: true
 ---
 
 In the paragraph [*device registration on TTN*](https://fylloclip.github.io/tutorial/device_registration.html)we have seen how an end device (FylloClip module) is registered on the TTN network. With this we enabled the data flow from the device in the field to the TTN network server, provided of course that there is TTN coverage at the site, which means that there needs to be a LoRa-gateway connected to TTN somewhere in the area. On [TTNmapper](https://ttnmapper.org/) you can find out if there is already TTN coverage in a specific location. If not, you will need to install your own LoRa gateway and register it on TTN.
@@ -30,7 +33,7 @@ Within PhpMyAdmin we can now manage the database. Inside this database we need t
 
 The easiest way to achieve this is to access the SQL register and insert there the following code:
 
-```{verbatim}
+``` yaml
 CREATE TABLE `tbl_1` ( 
   `ID` int PRIMARY KEY,  
   `Server_Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, 
@@ -39,11 +42,85 @@ CREATE TABLE `tbl_1` (
   `C` int NOT NULL COMMENT 'C1', 
   `D` int NOT NULL COMMENT 'C2', 
   `E` float NOT NULL COMMENT 'Battery' 
-) ENGINE=MyISAM DEFAULT CHARSET=latin1; 
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 ```
 
 ![](images/clipboard-436791430.png)
 
 ![](images/clipboard-1142989514.png){width="500"}
 
+Thereafter you will see on the left that a new table named tbl_1 has been added to the database. You can use the same script to add further tables, like tbl_2, tbl_3 and so on.
+
 ![](images/clipboard-2985810636.png){width="500"}
+
+But how can our data reach a table in the database? First, we need to tell the TTN server to forward the data to our altervista website, then we need to have a small piece of code on altervista which will accept the data coming in from TTN and insert the values into the respective tables.
+
+**php script on altervista**
+
+Log into your altervista website and go to *File management*.
+
+![](images/clipboard-1327671202.png){width="500"}
+
+next, create a new php-file and give it a name:
+
+![](images/clipboard-2752521426.png){width="500"}
+
+inside the window, which will open, paste the following code and hit *save*:
+
+``` yaml
+<?php 
+    //Receive from TTN
+ $postdata = file ('php://input');
+
+//decode the JSON object and assign values to variables
+$data = json_decode($postdata[0]);
+
+$Z = $data->uplink_message->decoded_payload->Z;
+$A = $data->uplink_message->decoded_payload->A;
+$B = $data->uplink_message->decoded_payload->B;
+$C = $data->uplink_message->decoded_payload->C;
+$D = $data->uplink_message->decoded_payload->D;
+$E = $data->uplink_message->decoded_payload->E;
+
+//connect to database and insert values
+$link = mysqli_connect("localhost", "foliarsensors", "", "my_foliarsensors");
+
+//error handling
+if (!$link) {die('Impossibile connettersi: ' . mysqli_error());}
+
+$table_id = "tbl_".$Z;
+
+$sql = "INSERT INTO $table_id
+(ID, Server_Time, A, B, C, D, E)
+VALUES (NULL, CURRENT_TIMESTAMP, $A, $B, $C, $D, $E);";
+
+$retval = mysqli_query ($link, $sql);
+
+//error handling
+if(! $retval ){
+die('impossible to execute the query: ' . mysqli_error());
+}
+
+//close connection to db
+mysqli_close($link);
+
+?>
+```
+
+![](images/clipboard-628929636.png){width="500"}
+
+**Forwarding the data from TTN to altervista**
+
+This is achieved by specifying a path inside the TTN console which will channel the data to the above script. Go to the application you have already created and select integrations –\> webhooks –\> add webhook
+
+![](images/clipboard-491052459.png){width="500"}
+
+next, choose *custom webhook:*
+
+![](images/clipboard-293471513.png){width="500"}
+
+give the webhook a name and insert the address of your altervista website and then insert the name of the php-script which will later handle the the flow of the data into your database. At the bottom of the page, hit *add webhook.*
+
+![](images/clipboard-3063240609.png){width="500"}
+
+Now we should have everything in place for our dataflow to start...
