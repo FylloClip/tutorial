@@ -2,6 +2,9 @@
 title: "About"
 ---
 
-The purpose of this site is to enable anyone to build his or her own microcontroller board with FylloClip sensors and to put it into action. Finally, this should allow you to monitor the water status of plants with remote transmission of the data from the field to the cloud, so that you can control on your PC or mobile phone at any time and from any place whether your plants ente in a condition of water stress.
+This site aims to enable anyone to create and deploy their own microcontroller board with FylloClip sensors. Ultimately, this will enable you to remotely monitor the water status of plants, transmitting data from the field to the cloud. Consequently, you can check on your PC or mobile phone, anytime and anywhere, if they are experiencing water stress.
 
-The entire system can be replicated at very limited costs and requires only basic skills in electronics (such as handling a soldering iron) and some experience in working with microcontrollers, in particular with Arduino.
+This entire system can be replicated at a very low cost and requires only basic electronics skills (like soldering) and some familiarity with microcontrollers, particularly Arduino.
+
+The scientific background and working principle of these foliar sensors, named FylloClip due to their paperclip-like attachment, are explained in detail in the following publication: \
+[*A leaf-mounted capacitance sensor for continuous monitoring of foliar transpiration and solar irradiance as an indicator of plant water status*](https://www.agroengineering.org/jae/article/view/1477/1066)
