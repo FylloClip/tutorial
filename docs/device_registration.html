@@ -262,12 +262,12 @@ ul.task-list li input[type="checkbox"] {
 <p>Each device needs to be registered on the ‘The Things Network’ platform (TTN) for becoming fully operational.</p>
 <p>First, create a free account on The Things Network: <a href="https://www.thethingsnetwork.org/get-started" class="uri">https://www.thethingsnetwork.org/get-started</a></p>
 <p><img src="images/clipboard-3534874080.png" class="img-fluid" width="500"></p>
-<p>Once you have created your account, you need to create a so called ‘application’, which can be considered as a collection of end devices to be handled in a similar manner, concerning structure and transmission of their data.</p>
+<p>Once you’ve signed up and created your account, you’ll need to create an ‘application’. This can be thought of as a group of end devices managed similarly in terms of their structure and data transmission.</p>
 <p><img src="images/clipboard-93905321.png" class="img-fluid" width="650"></p>
 <p><img src="images/clipboard-843987135.png" class="img-fluid" width="650"></p>
-<p>After having created the application we should specify some settings necessary for the later data handling. One thing to do is the insert a payload formatter, i.e.&nbsp;a code which will transform the incoming data into form suitable for your planned data flow.</p>
+<p>After creating the application, you’ll need to specify some settings for subsequent data handling. One crucial step is to insert a payload formatter, i.e.&nbsp;a code which will transform the incoming data into a format suitable for your intended data flow.</p>
 <p>The data flow and management proposed in this tutorial is only one of many possible options. Here, we will decode the incoming data packet and transform it to a JSON object containing 5 variables named Z, A, B, C, D and E. Z will hold the ID number of the device, A the light measurement of sensor 1, B the light measurement of sensor 2, C the capacitance value of sensor 1, D the capacitance value of sensor 2 and E the battery voltage.</p>
-<p>To enter the payload formatter for the application, select Payload formatters –&gt; Uplink and then <em>Custom Javascript formatter</em> as formatter type. In the field <em>Formatter code</em> paste the follwing code:</p>
+<p>To enter the payload formatter for the application, select Payload formatters –&gt; Uplink and then choose <em>Custom Javascript formatter</em> as the formatter type. In the field <em>Formatter code</em> paste the follwing code:</p>
 <pre><code>function Decoder(bytes, port) {
 
   return {

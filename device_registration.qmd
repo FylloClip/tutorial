@@ -8,17 +8,17 @@ First, create a free account on The Things Network: <https://www.thethingsnetwor
 
 ![](images/clipboard-3534874080.png){width="500"}
 
-Once you have created your account, you need to create a so called 'application', which can be considered as a collection of end devices to be handled in a similar manner, concerning structure and transmission of their data.
+Once you've signed up and created your account, you'll need to create an 'application'. This can be thought of as a group of end devices managed similarly in terms of their structure and data transmission.
 
 ![](images/clipboard-93905321.png){width="650"}
 
 ![](images/clipboard-843987135.png){width="650"}
 
-After having created the application we should specify some settings necessary for the later data handling. One thing to do is the insert a payload formatter, i.e. a code which will transform the incoming data into form suitable for your planned data flow.
+After creating the application, you'll need to specify some settings for subsequent data handling. One crucial step is to insert a payload formatter, i.e. a code which will transform the incoming data into a format suitable for your intended data flow.
 
 The data flow and management proposed in this tutorial is only one of many possible options. Here, we will decode the incoming data packet and transform it to a JSON object containing 5 variables named Z, A, B, C, D and E. Z will hold the ID number of the device, A the light measurement of sensor 1, B the light measurement of sensor 2, C the capacitance value of sensor 1, D the capacitance value of sensor 2 and E the battery voltage.
 
-To enter the payload formatter for the application, select Payload formatters –\> Uplink and then *Custom Javascript formatter* as formatter type. In the field *Formatter code* paste the follwing code:
+To enter the payload formatter for the application, select Payload formatters –\> Uplink and then choose *Custom Javascript formatter* as the formatter type. In the field *Formatter code* paste the follwing code:
 
 ```         
 function Decoder(bytes, port) {
