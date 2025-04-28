@@ -6,5 +6,19 @@ This site aims to enable anyone to create and deploy their own microcontroller b
 
 This entire system can be replicated at a very low cost and requires only basic electronics skills (like soldering) and some familiarity with microcontrollers, particularly Arduino.
 
-The scientific background and working principle of these foliar sensors, named FylloClip due to their paperclip-like attachment, are explained in detail in the following publication: \
+**What can a FylloClip sensor do and what can't it do?**
+
+FylloClip sensors can provide reliable indications of whether a plant is optimally supplied with water or if drought stress due to water deficiency is setting in.
+
+FylloClip sensors do not measure transpiration rates, although the measurement signal of the capacitive part is strongly influenced by the transpiration of the leaf. Therefore, FylloClip sensors are not porometers. They provide a qualitative measurement regarding the water status of a plant, and not a quantitative reference value.
+
+**What is the ideal application area for FylloClip sensors?**
+
+FylloClip sensors are particularly suitable for plants with deep or widely extensive root systems, where soil moisture sensors, due to their very localized measurements, have only limited significance. The FylloClip sensors provide information about the plant's water supply, as affected by the water availability in the entire soil volume explored by its roots.
+
+The scientific background and working principle of these foliar sensors, named FylloClip due to their paperclip-like attachment, are explained in detail in the following publication:\
 [*A leaf-mounted capacitance sensor for continuous monitoring of foliar transpiration and solar irradiance as an indicator of plant water status*](https://www.agroengineering.org/jae/article/view/1477/1066)
+
+![FylloClip sensor on apple leaf](images/fylloclip_apple.png){fig-align="left" width="372"}
+
+![FylloClip on grapevine](images/grapevine.jpg){width="412"}
