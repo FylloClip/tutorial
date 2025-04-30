@@ -19,10 +19,12 @@ FylloClip sensors are particularly suitable for plants with deep or widely exten
 The scientific background and working principle of these foliar sensors, named 'FylloClip' due to their paperclip-like attachment, are explained in detail in the following publication:\
 [*A leaf-mounted capacitance sensor for continuous monitoring of foliar transpiration and solar irradiance as an indicator of plant water status*](https://www.agroengineering.org/jae/article/view/1477/1066)
 
-![FylloClip sensor on apple leaf](images/fylloclip_apple.png){alt="FylloClip sensor on apple leaf" fig-align="left" width="372"}
+![FylloClip sensor on apple leaf](images/fylloclip_apple.png){fig-align="left" width="372"}
 
-![FylloClip on grapevine](images/grapevine.jpg){alt="FylloClip on grapevine" fig-align="left" width="412"}
+![FylloClip on grapevine](images/grapevine.jpg){fig-align="left" width="412"}
 
 ![![](images/clipboard-2063268666.png){width="440"}](images/clipboard-4003555692.png){fig-align="left" width="440"}
 
 A fully assembled FylloClip module
+
+![Example of sensor output on a well watered plant: the capacitance values closely follow the pattern of solar radiation.](images/Graph_sensor_output_1.png)
