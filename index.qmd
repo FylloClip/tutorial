@@ -28,3 +28,5 @@ The scientific background and working principle of these foliar sensors, named '
 A fully assembled FylloClip module
 
 ![Example of sensor output on a well watered plant: the capacitance values closely follow the pattern of solar radiation.](images/Graph_sensor_output_1.png)
+
+![Example of sensor output showing the onset of water stress through an early drop in capacitance that increasingly deviates from the pattern of solar radiation.](images/Graph_sensor_output_2.png)
