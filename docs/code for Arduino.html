@@ -265,6 +265,8 @@ ul.task-list li input[type="checkbox"] {
 <figcaption><em>part of the Arduino sketch with the ID- number in line 11 and the identification keys in lines 15, 18 and 21.</em></figcaption>
 </figure>
 </div>
+<p>This code requires the installation of the TinyLora library. You can install the library with the library manager of the Arduino IDE, which you find unter tools –&gt; manage libraries. The screenshot below provides further details.</p>
+<p>After installing the library, you have to find the folder of your PC, where the libraries are installed (normally something like …Arduino/libraries/TinyLoRa). In this folder edit the file TinyLoRa.h with a text editor and modify, if needed, the settings for the region configuration. In the picture below so see the correct settings for Europe. You can change the settings by commenting or uncommenting the respective lines of interest.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="tinylora.png" class="img-fluid figure-img"></p>
@@ -278,6 +280,12 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>You need also to install the Low-Power library from Rocket Scream, which allows the board to go into power-saving sleep mode between measurements.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lowpowerlibrary.jpg" class="img-fluid figure-img" width="370"></p>
+<figcaption>Low-Power library</figcaption>
+</figure>
+</div>
 <p>For uploading the code you need a FTDI adapter. On the adapter select 3.3V power supply by positioning the jumper. This is important because the LoRa module on the board requires a supply voltage of 3.3 V and could be damaged if we set the voltage to 5 V.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
