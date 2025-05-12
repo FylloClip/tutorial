@@ -2,7 +2,9 @@
 title: "uploading the code"
 ---
 
-In order to become fully operational, a software program needs to be uploaded to the microcontroller board. Here you find this code (or 'sketch', as it is called in Arduino language) for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e. to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud.
+In order to become fully operational, a software program needs to be uploaded to the microcontroller board. Here you find this code (or 'sketch', as it is called in Arduino language) for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e. to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud. Here the download link for the Arduino code: [Arduino code](https://github.com/FylloClip/tutorial/blob/main/ressources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino)
+
+The sketch needs to be uploaded to your microcontroller board. This can be easily done with the Arduino IDE (integrated development environment), which can be freely downloaded from the internet and installed on your PC. If you need more details about this step, visit: <https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE>
 
 There are a few things to explain about this sketch. It is designed to run the FylloClip module in ABP (activation by personalisation) mode, which is one of two possibles modes of establishing a connection of a device to a LoRa network. This is not the officially recommended mode (which would be over the air activation, or OTAA), but it has the advantage of using a much more lightweight library (TinyLoRa) and that under some circumstances it uses less power.
 
@@ -37,10 +39,6 @@ If you have installed male pin headers on your microcontroller board, you need t
 Before uploading the sketch make sure you have the correct board settings in the Arduino IDE: the selected board should be 'Arduino Pro or Pro Mini' with 'ATmega328P(3.3V 8 Mhz)' as processor. Make also sure you have selected the COM port to which the FTDI adapter is connected.
 
 ![*Board settings in the Arduino IDE*](images/clipboard-4191342988.png){width="500"}
-
-Download link for the Arduino code:
-
-[Arduino code](https://github.com/FylloClip/tutorial/blob/main/ressources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino)
 
 Once uploaded the sketch, you should be able to communicate with the board via the serial terminal of the IDE. the required settings for the serial monitor are 'no line ending' and '9600 baud':
 

@@ -255,7 +255,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In order to become fully operational, a software program needs to be uploaded to the microcontroller board. Here you find this code (or ‘sketch’, as it is called in Arduino language) for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e.&nbsp;to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud.</p>
+<p>In order to become fully operational, a software program needs to be uploaded to the microcontroller board. Here you find this code (or ‘sketch’, as it is called in Arduino language) for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e.&nbsp;to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud. Here the download link for the Arduino code: <a href="https://github.com/FylloClip/tutorial/blob/main/ressources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino">Arduino code</a></p>
+<p>The sketch needs to be uploaded to your microcontroller board. This can be easily done with the Arduino IDE (integrated development environment), which can be freely downloaded from the internet and installed on your PC. If you need more details about this step, visit: <a href="https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE" class="uri">https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE</a></p>
 <p>There are a few things to explain about this sketch. It is designed to run the FylloClip module in ABP (activation by personalisation) mode, which is one of two possibles modes of establishing a connection of a device to a LoRa network. This is not the officially recommended mode (which would be over the air activation, or OTAA), but it has the advantage of using a much more lightweight library (TinyLoRa) and that under some circumstances it uses less power.</p>
 <p>The ABP mode of activating the device requires 3 unique identification keys to be inserted into the sketch before uploading it to the device. These are the <strong>network session key</strong> (NwkSkey), the <strong>application session key</strong> (AppSkey) and <strong>device address</strong> (DevAddr). You will obtain these codes when registering a new end device on the TTS console, after creating your own personal account there. It is important to copy and paste the keys in the hexadecimal format displaying an 0x in front of each number</p>
 <p>In addition, for your own use, you can assign an ID-number from 0 - 99 to each device.</p>
@@ -313,8 +314,6 @@ ul.task-list li input[type="checkbox"] {
 <figcaption><em>Board settings in the Arduino IDE</em></figcaption>
 </figure>
 </div>
-<p>Download link for the Arduino code:</p>
-<p><a href="https://github.com/FylloClip/tutorial/blob/main/ressources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino">Arduino code</a></p>
 <p>Once uploaded the sketch, you should be able to communicate with the board via the serial terminal of the IDE. the required settings for the serial monitor are ‘no line ending’ and ‘9600 baud’:</p>
 <p><img src="images/clipboard-1287549793.png" class="img-fluid"></p>
 <p>As soon as you start the serial terminal, the menu shown in the above screenshot appears. It will remain active only for a few seconds, after which the board goes into sleep mode. You can reactivate the menu by closing the serial terminal and opening it again. Then type immediately one of the letters of the options in the menu and hit ‘enter’.</p>
