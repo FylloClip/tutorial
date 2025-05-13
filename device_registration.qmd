@@ -59,6 +59,8 @@ Next, you can start with the registration of end devices (each FylloClip module 
 
 Follow the settings in the subsequent screenshots (if you're located outside of Europe select the frequency plan applicable to your region).
 
+![](images/clipboard-1048079409.png){width="550"}
+
 ![](images/clipboard-488402867.png){width="550"}
 
 next, select ABP and generate the DevEUI and the various keys:
