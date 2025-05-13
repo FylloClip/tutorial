@@ -24,6 +24,8 @@ After installing the library, you have to find the folder of your PC, where the 
 
 You need also to install the Low-Power library from Rocket Scream, which allows the board to go into power-saving sleep mode between measurements.
 
+You can download the library here: <https://github.com/rocketscream/Low-Power>
+
 ![Low-Power library](images/lowpowerlibrary.jpg){width="370"}
 
 For uploading the code you need a FTDI adapter. On the adapter select 3.3V power supply by positioning the jumper. This is important because the LoRa module on the board requires a supply voltage of 3.3 V and could be damaged if we set the voltage to 5 V.
