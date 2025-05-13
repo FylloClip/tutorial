@@ -61,8 +61,6 @@ Follow the settings in the subsequent screenshots (if you're located outside of 
 
 ![](images/clipboard-1048079409.png){width="550"}
 
-![](images/clipboard-488402867.png){width="550"}
-
 next, select ABP and generate the DevEUI and the various keys:
 
 ![](images/clipboard-4107351814.png)
