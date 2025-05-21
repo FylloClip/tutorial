@@ -107,6 +107,8 @@ mysqli_close($link);
 ?>
 ```
 
+**Make sure to replace the name of the database in this code with the name you have chosen for your database...**
+
 ![](images/clipboard-628929636.png){width="500"}
 
 **Forwarding the data from TTN to altervista**
