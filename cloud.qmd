@@ -34,14 +34,14 @@ Within PhpMyAdmin we can now manage the database. Inside this database we need t
 The easiest way to achieve this is to access the SQL register and insert there the following code:
 
 ``` yaml
-CREATE TABLE `tbl_1` ( 
-  `ID` int PRIMARY KEY,  
-  `Server_Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, 
-  `A` int NOT NULL COMMENT 'L1', 
-  `B` int NOT NULL COMMENT 'L2', 
-  `C` int NOT NULL COMMENT 'C1', 
-  `D` int NOT NULL COMMENT 'C2', 
-  `E` float NOT NULL COMMENT 'Battery' 
+CREATE TABLE `tbl_1` (
+   `ID` int PRIMARY KEY AUTO_INCREMENT,
+   `Server_Time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   `A` int NOT NULL COMMENT 'L1',
+   `B` int NOT NULL COMMENT 'L2',
+   `C` int NOT NULL COMMENT 'C1',
+   `D` int NOT NULL COMMENT 'C2',
+   `E` float NOT NULL COMMENT 'Battery'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 ```
 
