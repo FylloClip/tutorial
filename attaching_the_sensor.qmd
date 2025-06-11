@@ -1,3 +1,19 @@
 ---
-title: "attaching the sensor to a leaf"
+title: "guidelines for attaching a FylloClip sensor"
 ---
+
+When attaching a FylloClip sensor, there are a few simple basic rules to follow:
+
+-   The sensor should be attached to a **sun-exposed, fully developed leaf**.
+
+-   The sensor should **not be placed on prominent leaf veins**, as this creates too much space between the sensor and the leaf blade.
+
+-   The sensor's **cables should be secured to the petiole** (leaf stalk). This allows the sensor to move with the leaf and shoot, preventing it from being stripped off the leaf in strong winds. Easily bendable binding wire is well-suited for this purpose.
+
+-   If a leaf is not exposed to the sun all day, such as with north-south oriented plant rows, it may be useful to place one sensor on the east side and a second on the west side of the plant.
+
+![FylloClip on grapevine, upper side of the leaf](images/grapevine_front.JPG){width="600"}
+
+![FylloClip on grapevine, lower side of the leaf, note the cable fixed to the petiole.](images/grapevine_back.JPG){width="600"}
+
+![Detail of the cables fixed to the leaf petiole with binding wire](images/cable_fixing.JPG){width="600"}
