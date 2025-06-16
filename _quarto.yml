@@ -5,9 +5,7 @@ project:
 website:
   title: "FylloClip tutorial"
   navbar:
-    logo: "/images/logo_laimburg.png" # Path to your logo (relative to the site root)
-    logo-alt: "FylloClip Logo" # Alt text for accessibility
-  
+    
     left:
       - href: index.qmd
         text: Home
@@ -39,7 +37,12 @@ website:
           - attaching_the_sensor.qmd
           - data interpretation
       - outlook
-
+      
+   # ADD THE LOGO HERE, AFTER ALL YOUR CONTENT SECTIONS
+      - section: "" # This can be an empty section or a separator
+        text: |
+        html: "_includes/sidebar_footer.html" # Path to your custom HTML partial
+     
 format:
   html:
     theme: flatly
