@@ -5,6 +5,9 @@ project:
 website:
   title: "FylloClip tutorial"
   navbar:
+    logo: "/images/logo_laimburg.png" # Path to your logo (relative to the site root)
+    logo-alt: "FylloClip Logo" # Alt text for accessibility
+  
     left:
       - href: index.qmd
         text: Home
