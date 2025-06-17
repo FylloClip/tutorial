@@ -5,6 +5,8 @@ project:
 website:
   title: "FylloClip tutorial"
   navbar:
+    logo: images/logo_laimburg.png  # Hier wird das Logo eingefügt
+    href: https://www.laimburg.it       # Ziel-Link
     
     left:
       - href: index.qmd
