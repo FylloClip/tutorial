@@ -5,16 +5,14 @@ project:
 website:
   title: "FylloClip tutorial"
   navbar:
-    logo: images/logo_laimburg.png  # Hier wird das Logo eingefügt
-    href: https://www.laimburg.it       # Ziel-Link
-    
     left:
-      - href: index.qmd
-        text: Home
+      - text: images/logo_laimburg.png
+        href: https://www.laimburg.it
+      - text: "Home"
+        href: index.qmd
     tools:
       - icon: github
         href: https://github.com/
-
 
   sidebar:
     style: "docked"
@@ -26,32 +24,27 @@ website:
       - section: "***HARDWARE***"
         contents:
           - PCBs.qmd
-          - list of components.qmd
+          - list_of_components.qmd
           - burning_bootloader.qmd
       - section: "***ASSEMBLY***"
         contents:
           - assembly_instructions.qmd
       - section: "***SOFTWARE***"
         contents:
-          - code for Arduino.qmd
+          - code_for_Arduino.qmd
           - device_registration.qmd
           - cloud.qmd
       - section: "***DEPLOYING THE DEVICE***"
         contents:
-          - testing the device
+          - testing_the_device.qmd
           - attaching_the_sensor.qmd
-          - data interpretation
-      - outlook
-      
+          - data_interpretation.qmd
+      - outlook.qmd
 
 format:
   html:
     theme: flatly
-  #  mainfont: arial
-  #  fontsize: 1.5rem
-  #  fontcolor: "#0013d5"
     linkcolor: "blue"
-  #  monofont: courier new
     css: styles.css
     toc: true
 
