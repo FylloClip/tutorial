@@ -20,7 +20,7 @@ website:
     style: "docked"
     search: true
     contents:
-      - section: "***LEGAL NOTE***"
+      - section: " "
         contents:
           - legal_note.qmd
       - section: "***HARDWARE***"

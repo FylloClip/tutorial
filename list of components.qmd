@@ -29,7 +29,7 @@ Battery holder for 2 AA batteries
 Here a detailed list of all the required electronic components with links to a possible supplyer:
 
 |  |  |
-|----|----|
+|------------------------------------|------------------------------------|
 | **component**​ | **link**​ |
 | photodiode​ | [https://www.reichelt.com](https://www.reichelt.com/it/en/shop/product/silicon_pin_photodiode_400_1100nm_150_5_mm-60569)​ |
 | microcontroller atmega328 with bootloader for Arduino Pro Mini 3.3V​ | [https://www.reichelt.com](https://www.reichelt.com/it/en/shop/product/8-bit_atmega_avr_microcontroller_32_kb_20_mhz_pdip-28-119685) (you need to burn the bootloader onto the chip by yourself)​ |
