@@ -2,7 +2,5 @@
 title: "legal note"
 ---
 
-**Legal note**
-
 All information provided in this tutorial, including schematics and code, is freely available for personal and commercial use. However, the name **"FylloClip"** is a legally protected trademark of the [**Laimburg Research Centre**](https://www.laimburg.it/en/default.asp).\
 Any commercial use of the name **"FylloClip"** requires prior formal authorization from the Laimburg Research Centre.
