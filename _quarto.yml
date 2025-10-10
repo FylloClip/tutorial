@@ -20,6 +20,9 @@ website:
     style: "docked"
     search: true
     contents:
+      - section: "***LEGAL NOTE***"
+        contents:
+          - legal_note.qmd
       - section: "***HARDWARE***"
         contents:
           - PCBs.qmd

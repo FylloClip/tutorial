@@ -8,11 +8,6 @@ This tutorial aims to enable anyone to create and deploy their own fully functio
 
 This entire system can be replicated at a very low cost and requires only basic electronics skills (like soldering) and some familiarity with microcontrollers, particularly Arduino.
 
-**Legal note**
-
-All information provided in this tutorial, including schematics and code, is freely available for personal and commercial use. However, the name **"FylloClip"** is a legally protected trademark of the [**Laimburg Research Centre**](https://www.laimburg.it/en/default.asp).\
-Any commercial use of the name **"FylloClip"** requires prior formal authorization from the Laimburg Research Centre.
-
 **What can a FylloClip sensor do and what can't it do?**
 
 FylloClip sensors can provide reliable indications of whether a plant is optimally supplied with water or if drought stress due to water deficiency is setting in.
