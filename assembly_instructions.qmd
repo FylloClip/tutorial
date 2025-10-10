@@ -18,7 +18,7 @@ Now continue with the remaining components, it doesn't matter in which order, bu
 
 Now most of the components have been added... before inserting the Atmega328 chip into the socket, you need to burn the bootloader for the Pro Mini Arduino (8Mhz, 3.3V) onto it.​
 
-If you want to monitor the battery voltage, solder a bridge between the two tiny solder plates marked with 'batt_mon' (yellow circle in the above pic), this will create a link between battery VCC and an analog pin of the micrcontroller.
+If you want to monitor the battery voltage, solder a bridge between the two tiny solder plates marked with 'batt_mon' (yellow circle in the above pic), this will create a link between battery VCC and an analog pin of the microcontroller.
 
 Instead of the male pin header (on the left) you can add a female header, depending on the type of FTDI adapter you will use for programming.​
 
