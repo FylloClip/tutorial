@@ -65,7 +65,7 @@ next, select ABP and generate the DevEUI and the various keys:
 
 ![](images/clipboard-4107351814.png)
 
-After registration we have to edit the newly created device to add a few further and to copy the keys we need to insert into the Arduino sketch
+After registration we have to edit the newly created device to add a few further details and to copy the keys we need to insert into the Arduino sketch
 
 ![](images/clipboard-3783806657.png){width="600"}
 
@@ -81,7 +81,7 @@ Click 9 times on the 'add frequency' button to add 9 empty fields
 
 ![](images/clipboard-3349742066.png)
 
-In those fields insert the following frequencies, this example reports the frequencies used for Europe (868 MHz frequency band), which are 868100000, 868300000, 868500000, 867100000, 867300000, 867500000, 867700000, 867900000, 868800000. Add the end save the changes.
+In those fields insert the following frequencies, this example reports the frequencies used for Europe (868 MHz frequency band), which are 868100000, 868300000, 868500000, 867100000, 867300000, 867500000, 867700000, 867900000. Add the end save the changes.
 
 ![](images/clipboard-3505957760.png)
 
