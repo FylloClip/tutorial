@@ -2,7 +2,7 @@
 title: "uploading the code"
 ---
 
-In order to become fully operational, a software program needs to be uploaded to the microcontroller board. Here you find this code (or 'sketch', as it is called in Arduino language) for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e. to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud. Here the download link for the Arduino code: [Arduino code](https://github.com/FylloClip/tutorial/blob/main/ressources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino)
+In order to become fully operational, a software program needs to be uploaded to the microcontroller board. Here you find this code (or 'sketch', as it is called in Arduino language) for downloading, as well as some additional instructions. The sketch includes all the functions and routines for the system to operate, i.e. to carry out measurements at defined time intervals and to send the data over the LoRa network to the cloud. Here the download link for the Arduino code: [Arduino code](https://github.com/FylloClip/tutorial/blob/main/resources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino)
 
 The sketch needs to be uploaded to your microcontroller board. This can be easily done with the Arduino IDE (integrated development environment), which can be freely downloaded from the internet and installed on your PC. If you need more details about this step, visit: <https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE>
 
@@ -12,39 +12,39 @@ The ABP mode of activating the device requires 3 unique identification keys to b
 
 In addition, for your own use, you can assign an ID-number from 0 - 99 to each device.
 
-![*part of the Arduino sketch with the ID- number in line 11 and the identification keys in lines 15, 18 and 21.*](sketch.png){width="1000"}
+![*part of the Arduino sketch with the ID- number in line 11 and the identification keys in lines 15, 18 and 21.*](../images/sketch.png){width="1000"}
 
 This code requires the installation of the TinyLora library. You can install the library with the library manager of the Arduino IDE, which you find unter tools –\> manage libraries. The screenshot below provides further details.
 
 After installing the library, you have to find the folder of your PC, where the libraries are installed (normally something like ...Arduino/libraries/TinyLoRa). In this folder edit the file TinyLoRa.h with a text editor and modify, if needed, the settings for the region configuration. In the picture below so see the correct settings for Europe. You can change the settings by commenting or uncommenting the respective lines of interest.
 
-![*TinyLora library*](tinylora.png)
+![*TinyLora library*](../images/tinylora.png)
 
-![*select the correct frequency band for your region by commenting/uncommenting the respective lines of code*](frequency_settings.png){width="600"}
+![*select the correct frequency band for your region by commenting/uncommenting the respective lines of code*](../images/frequency_settings.png){width="600"}
 
 You need also to install the Low-Power library from Rocket Scream, which allows the board to go into power-saving sleep mode between measurements.
 
 You can download the library here: <https://github.com/rocketscream/Low-Power>
 
-![Low-Power library](images/lowpowerlibrary.jpg){width="370"}
+![Low-Power library](../images/lowpowerlibrary.jpg){width="370"}
 
 For uploading the code you need a FTDI adapter. On the adapter select 3.3V power supply by positioning the jumper. This is important because the LoRa module on the board requires a supply voltage of 3.3 V and could be damaged if we set the voltage to 5 V.
 
-![*FTDI adapter*](images/FTDI.png)
+![*FTDI adapter*](../images/FTDI.png)
 
 If you have installed male pin headers on your microcontroller board, you need to solder a female pin connector onto your FTDI adapter:
 
-![*FTDI adapter with modified connector pins*](images/FTDI_2.png){width="400"}
+![*FTDI adapter with modified connector pins*](../images/FTDI_2.png){width="400"}
 
-![*FTDI adapter connected to the microprocessor board for programming*](images/clipboard-2070729821.png){width="300"}
+![*FTDI adapter connected to the microprocessor board for programming*](../images/clipboard-2070729821.png){width="300"}
 
 Before uploading the sketch make sure you have the correct board settings in the Arduino IDE: the selected board should be 'Arduino Pro or Pro Mini' with 'ATmega328P(3.3V 8 Mhz)' as processor. Make also sure you have selected the COM port to which the FTDI adapter is connected.
 
-![*Board settings in the Arduino IDE*](images/clipboard-4191342988.png){width="500"}
+![*Board settings in the Arduino IDE*](../images/clipboard-4191342988.png){width="500"}
 
 Once uploaded the sketch, you should be able to communicate with the board via the serial terminal of the IDE. the required settings for the serial monitor are 'no line ending' and '9600 baud':
 
-![](images/clipboard-1287549793.png)
+![](../images/clipboard-1287549793.png)
 
 As soon as you start the serial terminal, the menu shown in the above screenshot appears. It will remain active only for a few seconds, after which the board goes into sleep mode. You can reactivate the menu by closing the serial terminal and opening it again. Then type immediately one of the letters of the options in the menu and hit 'enter'.
 

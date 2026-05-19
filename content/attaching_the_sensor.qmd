@@ -12,8 +12,8 @@ When attaching a FylloClip sensor, there are a few simple basic rules to follow:
 
 -   If a leaf is not exposed to the sun all day, such as with north-south oriented plant rows, it may be useful to place one sensor on the east side and a second on the west side of the plant.
 
-![FylloClip on grapevine, upper side of the leaf](images/grapevine_front.JPG){width="600"}
+![FylloClip on grapevine, upper side of the leaf](../images/grapevine_front.JPG){width="600"}
 
-![FylloClip on grapevine, lower side of the leaf, note the cable fixed to the petiole.](images/grapevine_back.JPG){width="600"}
+![FylloClip on grapevine, lower side of the leaf, note the cable fixed to the petiole.](../images/grapevine_back.JPG){width="600"}
 
-![Detail of the cables fixed to the leaf petiole with binding wire](images/cable_fixing.JPG){width="600"}
+![Detail of the cables fixed to the leaf petiole with binding wire](../images/cable_fixing.JPG){width="600"}

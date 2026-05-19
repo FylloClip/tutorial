@@ -11,23 +11,23 @@ As already mentioned in [*device registration on TTN*](https://fylloclip.github.
 
 As the first step, you need to create your own [(free) account](https://en.altervista.org/create-free-site.php). Choose the option *Hosting with file manager*. Although there appears a monthly cost, there will be the option for a free account at the next step.
 
-![](images/clipboard-1445895787.png){width="500"}
+![](../images/clipboard-1445895787.png){width="500"}
 
 Type in the desired name of your website and see if it is available. Follow the procedure for registration and after receiving a confirmation e-mail you will be the proud owner of the new website.
 
-![](images/clipboard-1928890711.png){width="500"}
+![](../images/clipboard-1928890711.png){width="500"}
 
 Once the website is created, two further steps are needed, namely to set up the database and to add a script which will accept the data-packets coming in from the TTN network server and insert the data into the database.
 
 Let's first set up the database:
 
-![](images/clipboard-1420886761.png){width="500"}
+![](../images/clipboard-1420886761.png){width="500"}
 
-![](images/clipboard-764368489.png){width="500"}
+![](../images/clipboard-764368489.png){width="500"}
 
 Once created the database access the PhpMyAdmin area. If you want, you can also activate the https protocol.
 
-![](images/clipboard-1168296288.png){width="500"}
+![](../images/clipboard-1168296288.png){width="500"}
 
 Within PhpMyAdmin we can now manage the database. Inside this database we need to create tables which will finally store the data. If you have several FylloClip modules, you will need a separate table for each one. You may remember that inside the Arduino code, which was uploaded to the microcontroller board, we specified the variable *ID* and assigned a value to this variable. Suppose this is your first module to which you assigned ID=1. The data of this module will end up in the table with the name tbl_1. But we have to create this table first.
 
@@ -45,13 +45,13 @@ CREATE TABLE `tbl_1` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 ```
 
-![](images/clipboard-436791430.png)
+![](../images/clipboard-436791430.png)
 
-![](images/clipboard-1142989514.png){width="500"}
+![](../images/clipboard-1142989514.png){width="500"}
 
 Thereafter you will see on the left that a new table named tbl_1 has been added to the database. You can use the same script to add further tables, like tbl_2, tbl_3 and so on.
 
-![](images/clipboard-2985810636.png){width="500"}
+![](../images/clipboard-2985810636.png){width="500"}
 
 But how can our data reach a table in the database? First, we need to tell the TTN server to forward the data to our altervista website, then we need to have a small piece of code on altervista which will accept the data coming in from TTN and insert the values into the respective tables.
 
@@ -59,11 +59,11 @@ But how can our data reach a table in the database? First, we need to tell the T
 
 Log into your altervista website and go to *File management*.
 
-![](images/clipboard-1327671202.png){width="500"}
+![](../images/clipboard-1327671202.png){width="500"}
 
 next, create a new php-file and give it a name:
 
-![](images/clipboard-2752521426.png){width="500"}
+![](../images/clipboard-2752521426.png){width="500"}
 
 inside the window, which will open, paste the following code and hit *save*:
 
@@ -109,20 +109,20 @@ mysqli_close($link);
 
 **Make sure to replace the name of the database in this code with the name you have chosen for your database...**
 
-![](images/clipboard-628929636.png){width="500"}
+![](../images/clipboard-628929636.png){width="500"}
 
 **Forwarding the data from TTN to altervista**
 
 This is achieved by specifying a path inside the TTN console which will channel the data to the above script. Go to the application you have already created and select integrations –\> webhooks –\> add webhook
 
-![](images/clipboard-491052459.png){width="500"}
+![](../images/clipboard-491052459.png){width="500"}
 
 next, choose *custom webhook:*
 
-![](images/clipboard-293471513.png){width="500"}
+![](../images/clipboard-293471513.png){width="500"}
 
 give the webhook a name and insert the address of your altervista website and then insert the name of the php-script which will later handle the the flow of the data into your database. At the bottom of the page, hit *add webhook.*
 
-![](images/clipboard-3063240609.png){width="500"}
+![](../images/clipboard-3063240609.png){width="500"}
 
 Now we should have everything in place for our dataflow to start...

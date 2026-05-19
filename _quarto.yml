@@ -9,7 +9,7 @@ website:
     href: https://www.laimburg.it       # Ziel-Link
     
     left:
-      - href: index.qmd
+      - href: content/index.qmd
         text: Home
     tools:
       - icon: github
@@ -22,26 +22,26 @@ website:
     contents:
       - section: " "
         contents:
-          - legal_note.qmd
-      - section: "***HARDWARE***"
+          - content/legal_note.qmd
+      - section: "**HARDWARE**"
         contents:
-          - PCBs.qmd
-          - list of components.qmd
-          - burning_bootloader.qmd
-      - section: "***ASSEMBLY***"
+          - content/PCBs.qmd
+          - content/list_of_components.qmd
+          - content/burning_bootloader.qmd
+      - section: "**ASSEMBLY**"
         contents:
-          - assembly_instructions.qmd
-      - section: "***SOFTWARE***"
+          - content/assembly_instructions.qmd
+      - section: "**SOFTWARE**"
         contents:
-          - code for Arduino.qmd
-          - device_registration.qmd
-          - cloud.qmd
-      - section: "***DEPLOYING THE DEVICE***"
+          - content/code_for_arduino.qmd
+          - content/device_registration.qmd
+          - content/cloud.qmd
+      - section: "**DEPLOYING THE DEVICE**"
         contents:
-          - testing the device
-          - attaching_the_sensor.qmd
-          - data interpretation
-      - outlook
+          - content/testing_the_device.qmd
+          - content/attaching_the_sensor.qmd
+          - content/data_interpretation.qmd
+    
       
 
 format:
