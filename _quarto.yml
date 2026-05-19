@@ -9,7 +9,7 @@ website:
     href: https://www.laimburg.it       # Ziel-Link
     
     left:
-      - href: content/index.qmd
+      - href: index.qmd
         text: Home
     tools:
       - icon: github
