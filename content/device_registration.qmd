@@ -6,13 +6,13 @@ Each device needs to be registered on the 'The Things Network' platform (TTN) fo
 
 First, create a free account on The Things Network: <https://www.thethingsnetwork.org/get-started>
 
-![](images/clipboard-3534874080.png){width="500"}
+![](../images/clipboard-3534874080.png){width="500"}
 
 Once you've signed up and created your account, you'll need to create an 'application'. This can be thought of as a group of end devices managed similarly in terms of their structure and data transmission.
 
-![](images/clipboard-93905321.png){width="650"}
+![](../images/clipboard-93905321.png){width="650"}
 
-![](images/clipboard-843987135.png){width="650"}
+![](../images/clipboard-843987135.png){width="650"}
 
 After creating the application, you'll need to specify some settings for subsequent data handling. One crucial step is to insert a payload formatter, i.e. a code which will transform the incoming data into a format suitable for your intended data flow.
 
@@ -47,7 +47,7 @@ function Decoder(bytes, port) {
 }
 ```
 
-![](images/clipboard-3102897427.png){width="500"}
+![](../images/clipboard-3102897427.png){width="500"}
 
 Having inserted the payload formatter at the application level, it will be automatically applied to all end devices which will be created within this application. Alternatively, it is also possible to specifiy a payload formatter individually for a single end device.
 
@@ -55,23 +55,23 @@ Another important setting at the application level is to specifiy, what the TTN 
 
 Next, you can start with the registration of end devices (each FylloClip module would be a single new end device)
 
-![](images/clipboard-3758552285.png){width="650"}
+![](../images/clipboard-3758552285.png){width="650"}
 
 Follow the settings in the subsequent screenshots (if you're located outside of Europe select the frequency plan applicable to your region).
 
-![](images/clipboard-1048079409.png){width="550"}
+![](../images/clipboard-1048079409.png){width="550"}
 
 next, select ABP and generate the DevEUI and the various keys:
 
-![](images/clipboard-4107351814.png)
+![](../images/clipboard-4107351814.png)
 
 After registration we have to edit the newly created device to add a few further details and to copy the keys we need to insert into the Arduino sketch
 
-![](images/clipboard-3783806657.png){width="600"}
+![](../images/clipboard-3783806657.png){width="600"}
 
 Scroll down and expand the Network layer settings
 
-![](images/clipboard-2029578782.png)
+![](../images/clipboard-2029578782.png)
 
 Scroll down and open the advanced MAC settings
 
@@ -79,26 +79,26 @@ Scroll down and open the advanced MAC settings
 
 Click 9 times on the 'add frequency' button to add 9 empty fields
 
-![](images/clipboard-3349742066.png)
+![](../images/clipboard-3349742066.png)
 
 In those fields insert the following frequencies, this example reports the frequencies used for Europe (868 MHz frequency band), which are 868100000, 868300000, 868500000, 867100000, 867300000, 867500000, 867700000, 867900000. Add the end save the changes.
 
-![](images/clipboard-3505957760.png){width="539"}
+![](../images/clipboard-3505957760.png){width="539"}
 
 Now we retrieve the keys to be inserted into the Arduino sketch. Return to 'Device overview'
 
-![](images/clipboard-399796964.png)
+![](../images/clipboard-399796964.png)
 
 Make NwkSKey and AppSKey visible
 
-![](images/clipboard-794427737.png)
+![](../images/clipboard-794427737.png)
 
-Move the cursor to the right side of the key fields to activate the formatting options, the change the format as follows. At the end copy each key using the copy function and insert them in the respective positions of the [Arduino sketch](https://github.com/FylloClip/tutorial/blob/main/ressources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino).
+Move the cursor to the right side of the key fields to activate the formatting options, the change the format as follows. At the end copy each key using the copy function and insert them in the respective positions of the [Arduino sketch](https://github.com/FylloClip/tutorial/blob/main/resources/Arduino%20code/FylloClip_2025/FylloClip_2025.ino).
 
-![](images/clipboard-1854050922.png)
+![](../images/clipboard-1854050922.png)
 
-![](images/clipboard-1614228506.png)
+![](../images/clipboard-1614228506.png)
 
-![](images/clipboard-1320572242.png)
+![](../images/clipboard-1320572242.png)
 
 You can also specify a unique ID number for your device (line 12 of the code), which may be helpful for later data handling. At this point the sketch id ready for the upload onto your device.

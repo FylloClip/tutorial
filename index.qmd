@@ -23,7 +23,7 @@ The scientific background and working principle of these foliar sensors, named '
 
 ![FylloClip sensor on apple leaf](images/fylloclip_apple.png){fig-align="left" width="372"}
 
-![FylloClip on grapevine](images/grapevine.jpg){fig-align="left" width="412"}
+![FylloClip on grapevine](../images/grapevine.jpg){fig-align="left" width="412"}
 
 ![![](images/clipboard-2063268666.png){width="440"}](images/clipboard-4003555692.png){fig-align="left" width="440"}
 
